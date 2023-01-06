@@ -14,4 +14,4 @@ use App\Http\Controllers\BaseController;
 |
 */
 
-Route::get('/bases', [BaseController::class, 'index']);
+Route::get('/', [BaseController::class, 'index']);
