@@ -16,7 +16,8 @@ return new class extends Migration
         Schema::create('bases', function (Blueprint $table) {
             $table->id();
             $table->string('name', 20);
-            $table->timestamps();
+            $table->integer('price');
+            $table->integer('max_dolls');
             $table->string('image', 100)->nullable();
         });
     }
