@@ -13,12 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('bases', function (Blueprint $table) {
+        Schema::create('goods', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 20);
-            $table->integer('price');
-            $table->integer('max_dolls');
-            $table->string('image', 100)->nullable();
+            $table->string('basis_category', 20);
+            $table->string('basis_name', 20);
+            $table->integer('basis_price');
+            $table->string('message', 20);
+            $table->string('comment', 50);
+            $table->integer('price_sum');
+            $table->timestamps();
         });
     }
 
@@ -29,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bases');
+        Schema::dropIfExists('goods');
     }
 };
