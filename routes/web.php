@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BaseController;
+use App\Http\Controllers\GoodsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,5 +13,5 @@ use App\Http\Controllers\BaseController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', [BaseController::class, 'index']);
+Route::get('/goods', [GoodsController::class, 'goods']);
+//Route::get('/goods', [GoodsController::class, 'store']);
