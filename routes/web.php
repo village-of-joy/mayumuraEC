@@ -13,5 +13,6 @@ use App\Http\Controllers\GoodsController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [GoodsController::class, 'index']);
 Route::get('/goods', [GoodsController::class, 'goods']);
 //Route::get('/goods', [GoodsController::class, 'store']);
