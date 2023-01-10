@@ -24,4 +24,9 @@ class GoodsController extends Controller
         return redirect('/goods/' . $goods->id);
     }
     */
+    
+    public function dolls()
+    {
+        return view('goods/dolls');
+    }
 }

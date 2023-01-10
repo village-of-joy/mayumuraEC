@@ -29,7 +29,7 @@
                         <div class="img_p">
                             <p>ノーマル</p>
                             <img src="image/board.jpg" alt="木板ノーマル画像" width="30%" height="30%">
-                        </div></td>
+                        </div>
                         <div class="img_p">
                             <p>ブランコ</p>
                             <img src="image/branko.jpg" alt="木板ブランコ画像" width="30%" height="30%">
@@ -97,6 +97,25 @@
             </dev>
         </dev>
         
+        <dev class="dolls">
+            <h2>人形</h2>
+            <dev>
+               <!-- foreach
+                    <h3>カテゴリー</h3>
+                    <p></p>
+                    <h3>種類</h3>
+                    <p></p>
+                    <h3>人形名前</h3>
+                    <p></p>
+                    <h3>値段</h3>
+                    <p></p>
+                endforeach  -->
+            </dev>
+            <dev>
+                <a href="/dolls"><button type="button">追加</button></a>
+            </dev>
+        </dev>
+        
         <dev class="message">
             <h2>メッセージ</h2>
             <input type="text" id="mes1" maxlength="10">
@@ -111,7 +130,8 @@
             <p id="inputlength">0文字</p>
         </dev>
         
-        <button type="button">next</button>
+        <a href="/dolls"><button type="button">next</button></a>
+        <a href="/"><button type="button">戻る</button></a>
             
         <script>
             function change() {
