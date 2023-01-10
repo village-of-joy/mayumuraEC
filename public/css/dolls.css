@@ -1,0 +1,27 @@
+body {
+    background-color: #ff7f50;
+}
+
+p.caution {
+    font-size: 6px;
+    margin-top: 0;
+    color: red;
+}
+
+/*画像に名前貼り付ける*/
+.img_p{
+    position: relative;
+    display: inline;
+}
+
+.img_p p{
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: 0;
+    left: 0;
+}
+
+.input {
+    margin-top: 25px;
+}
