@@ -15,5 +15,6 @@ use App\Http\Controllers\GoodsController;
 */
 Route::get('/', [GoodsController::class, 'index']);
 Route::get('/goods', [GoodsController::class, 'goods']);
+Route::get('/goods/varif/{goods}', [GoodsController::class, 'varif']);
+Route::post('/varif', [GoodsController::class, 'store']);
 Route::get('/dolls', [GoodsController::class, 'dolls']);
-//Route::get('/goods', [GoodsController::class, 'store']);

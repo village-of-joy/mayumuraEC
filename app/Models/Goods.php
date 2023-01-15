@@ -11,7 +11,11 @@ class Goods extends Model
     
     
     protected $fillable = [
-        
+        'basis_category',
+        'basis_name',
+        'basis_option',
+        'message',
+        'comment',
     ];
     
 }
