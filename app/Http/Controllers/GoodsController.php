@@ -12,21 +12,29 @@ class GoodsController extends Controller
         return view('goods/index');
     }
     
-    public function goods()
+    public function goods(Goods $goods)
     {
-        return view('goods/goods');
+        return view('goods/goods')->with(['goods' => $goods]);
     }
     
-    /*public function store(Request $request, Goods $goods)
+    
+    public function store(Request $request, Goods $goods)
     {
         $input = $request['goods'];
-        $post->fill($input)->save();
-        return redirect('/goods/' . $goods->id);
+        $goods->fill($input)->save();
+        return redirect('goods/varif/' . $goods->id);
     }
-    */
+
     
     public function dolls()
     {
         return view('goods/dolls');
     }
+    
+    public function varif(Goods $goods)
+    {
+        return view('goods/varif')->with(['goods' => $goods]);
+    }
+    
+    
 }

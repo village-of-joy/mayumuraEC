@@ -16,12 +16,10 @@ return new class extends Migration
         Schema::create('goods', function (Blueprint $table) {
             $table->id();
             $table->string('basis_category', 10);
-            $table->string('basis_name', 10)->nullable;
-            $table->string('basis_option', 10)->nullable;
-            $table->integer('basis_price');
-            $table->string('message', 20)->nullable;
-            $table->string('comment', 200)->nullable;
-            $table->integer('price');
+            $table->string('basis_name', 10)->nullable();
+            $table->string('basis_option', 10)->nullable();
+            $table->string('message', 20)->nullable();
+            $table->string('comment', 200)->nullable();
             $table->timestamps();
         });
     }
