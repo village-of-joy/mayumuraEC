@@ -125,10 +125,6 @@
                 <p id="inputlength2">0文字</p>
             </dev>
             
-            <dev class="price">
-                <h2>合計金額</h2>
-            </dev>
-            
             <input type="submit" value="確認"/>
         </form>
     
