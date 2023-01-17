@@ -22,7 +22,7 @@ class GoodsController extends Controller
     {
         $input = $request['goods'];
         $goods->fill($input)->save();
-        return redirect('goods/varif/' . $goods->id);
+        return redirect('varif/' . $goods->id);
     }
 
     
@@ -49,10 +49,19 @@ class GoodsController extends Controller
         return view('goods/varif', compact('basisPrice'))->with(['goods'=>$goods]);
     }
     
-    public function calc(){
-        $Goods = new Goods;
-        $basisPrice = $Goods->basePriceCalc();
-        
-        return view('goods/varif', compact('basisPrice'));
+    public function board(){
+        return view('goods/board');
+    }
+    
+    public function shikishi(){
+        return view('goods/shikishi');
+    }
+    
+    public function boardDolls(){
+        return view('goods/boardDolls');
+    }
+    
+    public function shikishiDolls(){
+        return view('goods/shikishiDolls');
     }
 }
