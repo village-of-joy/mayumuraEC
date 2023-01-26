@@ -12,7 +12,7 @@
         <h1>Mayumura SHOP</h1>
         <form action="/varif" method="POST">
             @csrf
-            <dev class="basis">
+            <div class="basis">
                 <h2 class="bases">土台</h2>
                     <h3>色紙</h3>
                     <input type="hidden" name="goods[basis_category]" value="色紙"/>
@@ -51,21 +51,21 @@
                         
                         <div class="shikishi_option">
                             <h2>色紙の色</h2>
-                            <dev class="img_p">
+                            <div class="img_p">
                                 <img src="image/shikishi_blue.jpg" alt="色紙青画像" width="30%" height="30%">
                                 <p>色紙・青</p>
-                            </dev>
+                            </div>
                             <div class="input_basis">
                                 <div><input type="radio" name="goods[basis_option]" value="色紙・青">色紙・青</div>
                             </div>
                         </div>
                 </div>
                 
-            </dev>
+            </div>
             
-            <dev class="dolls">
+            <div class="dolls">
                 <h2>人形</h2>
-                <dev>
+                <div>
                    <!-- foreach
                         <h3>カテゴリー</h3>
                         <p></p>
@@ -76,24 +76,24 @@
                         <h3>値段</h3>
                         <p></p>
                     endforeach  -->
-                </dev>
-                <dev>
+                </div>
+                <div>
                     <a href="/shikishiDolls"><button type="button">追加</button></a>
-                </dev>
-            </dev>
+                </div>
+            </div>
             
-            <dev class="message">
+            <div class="message">
                 <h2>メッセージ</h2>
                 <input type="text" name="goods[message]" id="textmes" maxlength="20" onkeyup="ShowLength1(value);">
                 <p class="caution">※20文字以内でお願いします</p>
                 <p id="inputlength1">0文字</p>
-            </dev>
+            </div>
             
-            <dev class="comment">
+            <div class="comment">
                 <h2>コメント・要望</h2>
                 <textarea name="goods[comment]" cols="24" rows="3" placeholder="200文字以下でお願いします" maxlength="200" onkeyup="ShowLength2(value);"></textarea>
                 <p id="inputlength2">0文字</p>
-            </dev>
+            </div>
             
             <input type="submit" value="確認"/>
         </form>
