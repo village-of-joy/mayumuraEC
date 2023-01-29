@@ -14,15 +14,22 @@ class GoodsController extends Controller
     }
     
     
-    public function store1(Request $request, Goods $goods)
+    public function store1(Request $request, Goods $goods, Dolls $dolls)
+    {
+        $input = $request['dolls'];
+        $dolls->fill($input)->save();
+        return redirect('/varif/'.$goods->id);
+    }
+    
+    public function storeb(Request $request, Goods $goods, Dolls $dolls)
     {
         $input = $request['goods'];
         $goods->fill($input)->save();
-        return redirect('/varif/'.$goods->id);
+        return redirect('/boardDolls1/'.$goods->id);
     }
 
     
-    public function varif(Request $request, Goods $goods)
+    public function varif(Goods $goods, Dolls $dolls)
     {
         $basisName = $goods->basis_name;
         $basisPrice = 0;
@@ -37,48 +44,24 @@ class GoodsController extends Controller
             $basisPrice += 700;
         }
         
-        
-        
-        return view('goods/varif', compact('basisPrice'))->with(['goods'=>$goods,
-                                                                    'input1'=>$request->input('input1'),
-                                                                    'input2'=>$request->input('input2'),
-                                                                    'input3'=>$request->input('input3'),
-                                                                    'input4'=>$request->input('input4')
-                                                                ]);
+        return view('goods/varif', compact('basisPrice'))->with(['goods'=>$goods]);
     }
     
     
     public function board(Request $request)
     {
-        return view('goods/board/board')->with(['input1'=>$request->input('input1'),
-                                            'input2'=>$request->input('input2'),
-                                            'input3'=>$request->input('input3'),
-                                            'input4'=>$request->input('input4'),
-                                            'basisname'=>$request->input('basisname')
-                                        ]);
+        return view('goods/board/board');
     }
     
     
-    public function boardDolls1(Request $request)
+    public function boardDolls1(Goods $goods)
     {
-        return view('goods/board/boardDolls1')->with([
-                                            'input1'=>$request->input('input1'),
-                                            'input2'=>$request->input('input2'),
-                                            'input3'=>$request->input('input3'),
-                                            'input4'=>$request->input('input4'),
-                                            'basisname'=>$request->input('basisname')
-                                        ]);
+        return view('goods/board/boardDolls1')->with(['goods'=>$goods]);
     }
     
     public function boardDolls2(Request $request)
     {
-        return view('goods/board/boardDolls2')->with([
-                                            'input1'=>$request->input('input1'),
-                                            'input2'=>$request->input('input2'),
-                                            'input3'=>$request->input('input3'),
-                                            'input4'=>$request->input('input4'),
-                                            'basisname'=>$request->input('basisname')
-                                        ]);
+        return view('goods/board/boardDolls2');
     }
     
      public function shikishi(){
