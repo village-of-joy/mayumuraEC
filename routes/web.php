@@ -16,12 +16,12 @@ use App\Http\Controllers\DollsController;
 */
 Route::get('/', [GoodsController::class, 'index']);
 
-Route::get('/varif/{goods}', [GoodsController::class, 'varif']);
-Route::post('/varif', [GoodsController::class, 'store1']);
+Route::get('/varif/{dolls}', [DollsController::class, 'varif']);
+Route::post('/varif', [DollsController::class, 'store']);
 
 Route::get('/board', [GoodsController::class, 'board']);
-Route::get('/boardDolls1', [GoodsController::class, 'boardDolls1']);
-Route::get('/boardDolls2', [GoodsController::class, 'boardDolls2']);
+Route::get('/boardDolls1/{goods}', [GoodsController::class, 'boardDolls1']);
+Route::post('/boardDolls1', [GoodsController::class, 'storeb']);
 
 Route::get('/shikishi', [GoodsController::class, 'shikishi']);
 Route::get('/shikishiDolls', [GoodsController::class, 'shikishiDolls']);

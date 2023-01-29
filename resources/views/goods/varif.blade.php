@@ -10,27 +10,19 @@
     <body>
         <h1>Mayumura SHOP</h1>
         <h2>確認</h2>
-            <h3 class="basis_category">
-                {{ $goods->basis_category }}
-            </h3>
-
-            <h3 class="basis_name">
-                {{ $goods->basis_name }}
-            </h3>
-
-            <h3 class="basis_option">
-                {{ $goods->basis_option }}
-            </h3>
-
-            <h3 class="message">
-                {{ $goods->message }}
-            </h3>
-
-            <h3 class="comment">
-                {{ $goods->comment }}
-            </h3>
             
-            <p>{{ $basisPrice }}</p>
+        <div class="verification">
+            <h3>土台：{{$goods->basis_category}}</h3>
+            <p>種類：{{$goods->basis_name}}</p>
+            <h3>土台値段</h3>
+            <p>{{$basisPrice}}円</p>
+            @foreach($goods as $good)
+                <h3>人形</h3>
+                <p>カテゴリー：{{$good->dolls_category}}</p>
+                <p>種類：{{$good->dolls_name}}</p>
+            @endforeach
+            
+        </div>
             
         <script></script>
     </body>
