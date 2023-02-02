@@ -16,7 +16,7 @@
             <h3>土台：{{$dolls->category}}</h3>
             <p>種類：{{$dolls->name}}</p>
             <h3>土台値段</h3>
-            <p>{{$basisPrice}}円</p>
+            <p>?円</p>
             
                 <h3>人形</h3>
                 <p>カテゴリー：{{$dolls->category}}</p>

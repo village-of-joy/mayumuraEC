@@ -9,20 +9,16 @@ use App\Http\Requests\DollRequest;
 
 class DollController extends Controller
 {
-    public function store(DollRequest $request, Goods $goods, Doll $dolls)
+    public function store(DollRequest $request, Goods $goods, Doll $doll)
     {
         $input = $request['doll'];
-        $dolls->fill($input)->save();
-        return redirect('/varif/'.$dolls->goods_id);
+        $doll->fill($input)->save();
+        return redirect('/varif/'.$doll->id);
     }
     
-    public function varif(Goods $goods, doll $dolls)
+    public function varif()
     {
-        $basisName = $goods->basis_name;
-        $basisPrice = 0;
-        $dolls->good;
-        $goods->dolls;
         
-        return view('goods/varif', compact('basisPrice'))->with(['dolls'=>$dolls]);
+        return view('goods/varif')->with(['goods'=>$goods]);
     }
 }

@@ -30,7 +30,7 @@ class GoodsController extends Controller
     }
 
     
-    public function varif(Goods $goods, Doll $doll)
+    public function varif()
     {
         $basisName = $goods->basis_name;
         $basisPrice = 0;
