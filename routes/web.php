@@ -17,7 +17,7 @@ use App\Http\Controllers\DollsController;
 Route::get('/', [GoodsController::class, 'index']);
 
 Route::get('/varif/{goods}', [GoodsController::class, 'varif']);
-Route::post('/varif', [GoodsController::class, 'store1']);
+Route::post('/varif', [GoodsController::class, 'store']);
 
 Route::get('/board', [GoodsController::class, 'board']);
 Route::get('/boardDolls1', [GoodsController::class, 'boardDolls1']);

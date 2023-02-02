@@ -14,13 +14,14 @@ class Goods extends Model
         'basis_category',
         'basis_name',
         'basis_option',
+        'doll_category1',
+        'doll_name1',
+        'doll_category2',
+        'doll_name2',
         'message',
         'comment',
     ];
     
-    public function dolls()
-    {
-        return $this->hasMany(Dolls::class);
-    }
+    
     
 }

@@ -14,7 +14,7 @@ class GoodsController extends Controller
     }
     
     
-    public function store1(Request $request, Goods $goods)
+    public function store(Request $request, Goods $goods)
     {
         $input = $request['goods'];
         $goods->fill($input)->save();
@@ -40,20 +40,20 @@ class GoodsController extends Controller
         
         
         return view('goods/varif', compact('basisPrice'))->with(['goods'=>$goods,
-                                                                    'input1'=>$request->input('input1'),
-                                                                    'input2'=>$request->input('input2'),
-                                                                    'input3'=>$request->input('input3'),
-                                                                    'input4'=>$request->input('input4')
+                                                                    'doll_category1'=>$request->input('doll_category1'),
+                                                                    'doll_name1'=>$request->input('doll_name1'),
+                                                                    'doll_category2'=>$request->input('doll_category2'),
+                                                                    'doll_name2'=>$request->input('doll_name2')
                                                                 ]);
     }
     
     
     public function board(Request $request)
     {
-        return view('goods/board/board')->with(['input1'=>$request->input('input1'),
-                                            'input2'=>$request->input('input2'),
-                                            'input3'=>$request->input('input3'),
-                                            'input4'=>$request->input('input4'),
+        return view('goods/board/board')->with(['doll_category1'=>$request->input('doll_category1'),
+                                            'doll_name1'=>$request->input('doll_name1'),
+                                            'doll_category2'=>$request->input('doll_category2'),
+                                            'doll_name2'=>$request->input('doll_name2'),
                                             'basisname'=>$request->input('basisname')
                                         ]);
     }
@@ -62,10 +62,10 @@ class GoodsController extends Controller
     public function boardDolls1(Request $request)
     {
         return view('goods/board/boardDolls1')->with([
-                                            'input1'=>$request->input('input1'),
-                                            'input2'=>$request->input('input2'),
-                                            'input3'=>$request->input('input3'),
-                                            'input4'=>$request->input('input4'),
+                                            'doll_category1'=>$request->input('doll_category1'),
+                                            'doll_name1'=>$request->input('doll_name1'),
+                                            'doll_category2'=>$request->input('doll_category2'),
+                                            'doll_name2'=>$request->input('doll_name2'),
                                             'basisname'=>$request->input('basisname')
                                         ]);
     }
@@ -73,10 +73,10 @@ class GoodsController extends Controller
     public function boardDolls2(Request $request)
     {
         return view('goods/board/boardDolls2')->with([
-                                            'input1'=>$request->input('input1'),
-                                            'input2'=>$request->input('input2'),
-                                            'input3'=>$request->input('input3'),
-                                            'input4'=>$request->input('input4'),
+                                            'doll_category1'=>$request->input('doll_category1'),
+                                            'doll_name1'=>$request->input('doll_name1'),
+                                            'doll_category2'=>$request->input('doll_category2'),
+                                            'doll_name2'=>$request->input('doll_name2'),
                                             'basisname'=>$request->input('basisname')
                                         ]);
     }

@@ -18,18 +18,22 @@
                 <h2>人形</h2>
                 <div>
                     <h3>人形１</h3>
-                    <p>{{$input1}}</p>
-                    <p>{{$input2}}</p>
+                    <p>{{$doll_category1}}</p>
+                    <p>{{$doll_name1}}</p>
                     <form action="/boardDolls1" method="GET">
                         <input type="submit" value="追加">
+                        <input type="hidden" name="doll_category2" value="{{$doll_category2}}"/>
+                        <input type="hidden" name="doll_name2" value="{{$doll_name2}}"/>
                     </form>
                 </div>
                 <div>
                     <h3>人形２</h3>
-                    <p>{{$input3}}</p>
-                    <p>{{$input4}}</p>
+                    <p>{{$doll_category2}}</p>
+                    <p>{{$doll_name2}}</p>
                     <form action="/boardDolls2" method="GET">
                         <input type="submit" value="追加">
+                        <input type="hidden" name="doll_category1" value="{{$doll_category1}}"/>
+                        <input type="hidden" name="doll_name1" value="{{$doll_name1}}"/>
                     </form>
                 </div>
             </div>
@@ -72,10 +76,10 @@
                 <p id="inputlength2">0文字</p>
             </div>
             
-            <input type="hidden" name="input1" value="{{$input1}}"/>
-            <input type="hidden" name="input2" value="{{$input2}}"/>
-            <input type="hidden" name="input3" value="{{$input3}}"/>
-            <input type="hidden" name="input4" value="{{$input4}}"/>
+            <input type="hidden" name="goods[doll_category1]" value="{{$doll_category1}}"/>
+            <input type="hidden" name="goods[doll_name1]" value="{{$doll_name1}}"/>
+            <input type="hidden" name="goods[doll_category2]" value="{{$doll_category2}}"/>
+            <input type="hidden" name="goods[doll_name2]" value="{{$doll_name2}}"/>
             
             <input type="submit" value="確認" />
         </form>
