@@ -4,14 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Goods;
 
-class Dolls extends Model
+class Doll extends Model
 {
     use HasFactory;
     
     protected $fillable = [
-        'dolls_category',
-        'dolls_name',
+        'category',
+        'name',
         'goods_id',
     ];
     
@@ -19,4 +20,5 @@ class Dolls extends Model
     {
         return $this->belongsTo(Goods::class);
     }
+    
 }

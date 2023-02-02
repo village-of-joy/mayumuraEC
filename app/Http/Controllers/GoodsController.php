@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Goods;
-use App\Models\Dolls;
+use App\Models\Doll;
+use App\Http\Requests\GoodsRequest;
 
 class GoodsController extends Controller
 {
@@ -14,14 +15,14 @@ class GoodsController extends Controller
     }
     
     
-    public function store1(Request $request, Goods $goods, Dolls $dolls)
+    public function store(Request $request, Goods $goods, Doll $dolls)
     {
         $input = $request['dolls'];
         $dolls->fill($input)->save();
-        return redirect('/varif/'.$goods->id);
+        return redirect('/varif/'.$dolls->good->id);
     }
     
-    public function storeb(Request $request, Goods $goods, Dolls $dolls)
+    public function BoardStore(GoodsRequest $request, Goods $goods)
     {
         $input = $request['goods'];
         $goods->fill($input)->save();
@@ -29,20 +30,11 @@ class GoodsController extends Controller
     }
 
     
-    public function varif(Goods $goods, Dolls $dolls)
+    public function varif(Goods $goods, Doll $doll)
     {
         $basisName = $goods->basis_name;
         $basisPrice = 0;
         
-        if($basisName == '竹立'){
-            $basisPrice += 400;
-        }elseif($basisName == '竹三角'){
-            $basisPrice += 600;
-        }elseif($basisName == '竹ばさみ'){
-            $basisPrice += 650;
-        }elseif($basisName == '扇面'){
-            $basisPrice += 700;
-        }
         
         return view('goods/varif', compact('basisPrice'))->with(['goods'=>$goods]);
     }

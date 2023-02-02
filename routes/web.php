@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GoodsController;
-use App\Http\Controllers\DollsController;
+use App\Http\Controllers\DollController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,12 +16,12 @@ use App\Http\Controllers\DollsController;
 */
 Route::get('/', [GoodsController::class, 'index']);
 
-Route::get('/varif/{dolls}', [DollsController::class, 'varif']);
-Route::post('/varif', [DollsController::class, 'store']);
+Route::get('/varif/{dolls}', [DollController::class, 'varif']);
+Route::post('/varif', [DollController::class, 'store']);
 
 Route::get('/board', [GoodsController::class, 'board']);
 Route::get('/boardDolls1/{goods}', [GoodsController::class, 'boardDolls1']);
-Route::post('/boardDolls1', [GoodsController::class, 'storeb']);
+Route::post('/boardDolls1', [GoodsController::class, 'BoardStore']);
 
 Route::get('/shikishi', [GoodsController::class, 'shikishi']);
 Route::get('/shikishiDolls', [GoodsController::class, 'shikishiDolls']);

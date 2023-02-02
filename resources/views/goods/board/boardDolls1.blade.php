@@ -5,7 +5,7 @@
         <title>Mayumura</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <link href="css/dolls.css" rel="stylesheet">
+        <link href="{{secure_asset('css/doll.css')}}" rel="stylesheet">
     </head>
     
     <body>
@@ -17,7 +17,7 @@
                 <h2>人形１</h2>
                 <div clss="category">
                     <h3>カテゴリー</h3>
-                    <select id="dolls_type" name="dolls[dolls_category]" onchange="DollsTypeCange();">
+                    <select id="dolls_type" name="doll[category]" onchange="DollsTypeCange();">
                         <option value="動物">動物</option>
                         <option value="十二支">十二支</option>
                     </select>
@@ -43,19 +43,19 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="dolls[dolls_name]" value="ねこ（ノーマル）">ねこ（ノーマル）</div>
-                            <div><input type="radio" name="dolls[dolls_name]" value="ねこ（笑顔）">ねこ（笑顔）</div>
+                            <div><input type="radio" name="doll[name]" value="ねこ（ノーマル）">ねこ（ノーマル）</div>
+                            <div><input type="radio" name="doll[name]" value="ねこ（笑顔）">ねこ（笑顔）</div>
                         </div>
                     </div>
                     
                     <div id="turtle" style="display:none">
                         <div class="turtle">
                             <div class="img_p">
-                                <img src="image/turtle_small.JPG" alt="かめ画像" width="30%" head="30%">
+                                <img src="{{secure_asset('image/turtle_small.JPG')}}" alt="かめ画像" width="30%" head="30%">
                                 <p>かめ</p>
                             </div>
                             <div class="input">
-                                <div><input type="radio" name="dolls[dolls_name]" value="かめ（小）">かめ（小）</div>
+                                <div><input type="radio" name="doll[name]" value="かめ（小）">かめ（小）</div>
                             </div>
                         </div>
                     </div>
@@ -68,28 +68,28 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="dolls[dolls_name]" value="ふくろう">ふくろう</div>
+                            <div><input type="radio" name="doll[name]" value="ふくろう">ふくろう</div>
                         </div>
                     </div>
                 </div>
                 
                 <div id="zodiac" style="display:none">
-           　  　     <select id="selbox" onchange="change();">
+                    <select id="selbox" onchange="change();">
                         <option value="1">子（ねずみ）</option>
-                　　      <option value="2">丑（うし）</option>
-                　       <option value="3">寅（とら）</option>
-                　　　     <option value="4">卯（うさぎ）</option>
-                　       <option value="5">辰（龍）</option>
+                        <option value="2">丑（うし）</option>
+                        <option value="3">寅（とら）</option>
+                        <option value="4">卯（うさぎ）</option>
+                        <option value="5">辰（龍）</option>
                         <option value="6">巳（へび）</option>
-                　　      <option value="7">午（うま）</option>
-                　　      <option value="8">未（ひつじ）</option>
-                　　      <option value="9">申（さる）</option>
-                　　      <option value="10">酉（とり）</option>
-                　　      <option value="11">戌（いぬ）</option>
-                　　　     <option value="12">亥（いのしし）</option>
-                　　</select>
+                        <option value="7">午（うま）</option>
+                        <option value="8">未（ひつじ）</option>
+                        <option value="9">申（さる）</option>
+                        <option value="10">酉（とり）</option>
+                        <option value="11">戌（いぬ）</option>
+                        <option value="12">亥（いのしし）</option>
+                    </select>
                 　　
-                　　<div id="mouse">
+                    <div id="mouse">
                         <div class="mouse">
                             <div class="img_p">
                                 <img src="image/mouse.JPG" alt="子（ねずみ・ノーマル）" width="30%" height="30%">
@@ -101,8 +101,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="dolls[dolls_name]" value="子（ねずみ・ノーマル）">子（ねずみ・ノーマル）</div>
-                            <div><input type="radio" name="dolls[dolls_name]" value="子（ねずみ・笑顔）">子（ねずみ・笑顔）</div>
+                            <div><input type="radio" name="doll[name]" value="子（ねずみ・ノーマル）">子（ねずみ・ノーマル）</div>
+                            <div><input type="radio" name="doll[name]" value="子（ねずみ・笑顔）">子（ねずみ・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -118,8 +118,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="dolls[dolls_name]" value="丑（うし・ノーマル）">丑（うし・ノーマル）</div>
-                            <div><input type="radio" name="dolls[dolls_name]" value="丑（うし・笑顔）">丑（うし・笑顔）</div>
+                            <div><input type="radio" name="doll[name]" value="丑（うし・ノーマル）">丑（うし・ノーマル）</div>
+                            <div><input type="radio" name="doll[name]" value="丑（うし・笑顔）">丑（うし・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -135,8 +135,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="dolls[dolls_name]" value="寅（とら・ノーマル）">寅（とら・ノーマル）</div>
-                            <div><input type="radio" name="dolls[dolls_name]" value="寅（とら・笑顔・黄色）">寅（とら・笑顔）</div>
+                            <div><input type="radio" name="doll[name]" value="寅（とら・ノーマル）">寅（とら・ノーマル）</div>
+                            <div><input type="radio" name="doll[name]" value="寅（とら・笑顔・黄色）">寅（とら・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -152,8 +152,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="dolls[dolls_name]" value="卯（うさぎ・ノーマル）">卯（うさぎ・ノーマル）</div>
-                            <div><input type="radio" name="dolls[dolls_name]" value="卯（うさぎ・笑顔）">卯（うさぎ・笑顔）</div>
+                            <div><input type="radio" name="doll[name]" value="卯（うさぎ・ノーマル）">卯（うさぎ・ノーマル）</div>
+                            <div><input type="radio" name="doll[name]" value="卯（うさぎ・笑顔）">卯（うさぎ・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -169,8 +169,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="dolls[dolls_name]" value="辰（龍・ノーマル）">辰（龍・ノーマル）</div>
-                            <div><input type="radio" name="dolls[dolls_name]" value="辰（龍・笑顔）">辰（龍・笑顔）</div>
+                            <div><input type="radio" name="doll[name]" value="辰（龍・ノーマル）">辰（龍・ノーマル）</div>
+                            <div><input type="radio" name="doll[name]" value="辰（龍・笑顔）">辰（龍・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -186,8 +186,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="dolls[dolls_name]" value="巳（へび・ノーマル）">巳（へび・ノーマル）</div>
-                            <div><input type="radio" name="dolls[dolls_name]" value="巳（へび・笑顔）">巳（へび・笑顔）</div>
+                            <div><input type="radio" name="doll[name]" value="巳（へび・ノーマル）">巳（へび・ノーマル）</div>
+                            <div><input type="radio" name="doll[name]" value="巳（へび・笑顔）">巳（へび・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -203,8 +203,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="dolls[dolls_name]" value="午（うま・ノーマル）">午（うま・ノーマル）</div>
-                            <div><input type="radio" name="dolls[dolls_name]" value="午（うま・笑顔）">午（うま・笑顔）</div>
+                            <div><input type="radio" name="doll[name]" value="午（うま・ノーマル）">午（うま・ノーマル）</div>
+                            <div><input type="radio" name="doll[name]" value="午（うま・笑顔）">午（うま・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -220,8 +220,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="dolls[dolls_name]" value="未（ひつじ・ノーマル）">未（ひつじ・ノーマル）</div>
-                            <div><input type="radio" name="dolls[dolls_name]" value="未（ひつじ・笑顔）">未（ひつじ・笑顔）</div>
+                            <div><input type="radio" name="doll[name]" value="未（ひつじ・ノーマル）">未（ひつじ・ノーマル）</div>
+                            <div><input type="radio" name="doll[name]" value="未（ひつじ・笑顔）">未（ひつじ・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -237,8 +237,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="dolls[dolls_name]" value="申（さる・ノーマル）">申（さる・ノーマル）</div>
-                            <div><input type="radio" name="dolls[dolls_name]" value="申（さる・笑顔）">申（さる・笑顔）</div>
+                            <div><input type="radio" name="doll[name]" value="申（さる・ノーマル）">申（さる・ノーマル）</div>
+                            <div><input type="radio" name="doll[name]" value="申（さる・笑顔）">申（さる・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -254,8 +254,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="dolls[dolls_name]" value="酉（とり・ノーマル）">酉（とり・ノーマル）</div>
-                            <div><input type="radio" name="dolls[dolls_name]" value="酉（とり・笑顔）">酉（とり・笑顔）</div>
+                            <div><input type="radio" name="doll[name]" value="酉（とり・ノーマル）">酉（とり・ノーマル）</div>
+                            <div><input type="radio" name="doll[name]" value="酉（とり・笑顔）">酉（とり・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -271,8 +271,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="dolls[dolls_name]" value="戌（いぬ・ノーマル）">戌（いぬ・ノーマル）</div>
-                            <div><input type="radio" name="dolls[dolls_name]" value="戌（いぬ・笑顔）">戌（いぬ・笑顔）</div>
+                            <div><input type="radio" name="doll[name]" value="戌（いぬ・ノーマル）">戌（いぬ・ノーマル）</div>
+                            <div><input type="radio" name="doll[name]" value="戌（いぬ・笑顔）">戌（いぬ・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -288,8 +288,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="dolls[dolls_name]" value="亥（いのしし・ノーマル）">亥（いのしし・ノーマル）</div>
-                            <div><input type="radio" name="dolls[dolls_name]" value="亥（いのしし・笑顔）">亥（いのしし・笑顔）</div>
+                            <div><input type="radio" name="doll[name]" value="亥（いのしし・ノーマル）">亥（いのしし・ノーマル）</div>
+                            <div><input type="radio" name="doll[name]" value="亥（いのしし・笑顔）">亥（いのしし・笑顔）</div>
                         </div>
                 　　</div>
             　　</div>
@@ -297,7 +297,7 @@
             　　
             　　
             </div>
-            <input type="hidden" name="dolls[goods_id]" value="{{$goods->id}}"/>
+            <input type="hidden" name="doll[goods_id]" value="{{$goods->id}}"/>
             <input type="submit" value="確定"/>
         </form>
         

@@ -32,8 +32,9 @@
                             </div>    
                         </div>
                         <div class="input_basis">
-                            <div><input type="radio" name="goods[basis_name]" value="ノーマル" {{ old('goods[basis_name]') === 'ノーマル' ? 'checked' : '' }}>ノーマル</div>
-                            <div><input type="radio" name="goods[basis_name]" value="ブランコ" {{ old('goods[basis_name]') === 'ブランコ' ? 'checked' : '' }}>ブランコ</div>
+                            <div><input type="radio" name="goods[basis_name]" value="ノーマル" {{ old('goods.basis_name') === 'ノーマル' ? 'checked' : '' }}>ノーマル</div>
+                            <div><input type="radio" name="goods[basis_name]" value="ブランコ" {{ old('goods.basis_name') === 'ブランコ' ? 'checked' : '' }}>ブランコ</div>
+                            <p class="title_error" style="color:red">{{ $errors->first('goods.basis_name')}}</p>
                         </div>
                     </div>
                 </div>
