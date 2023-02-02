@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Goods;
 use App\Models\Dolls;
+use App\Http\Requests\GoodsRequest;
 
 class GoodsController extends Controller
 {
@@ -14,7 +15,7 @@ class GoodsController extends Controller
     }
     
     
-    public function store(Request $request, Goods $goods)
+    public function store(GoodsRequest $request, Goods $goods)
     {
         $input = $request['goods'];
         $goods->fill($input)->save();

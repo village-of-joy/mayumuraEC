@@ -25,6 +25,7 @@
                         <input type="hidden" name="doll_category2" value="{{$doll_category2}}"/>
                         <input type="hidden" name="doll_name2" value="{{$doll_name2}}"/>
                     </form>
+                    <p class="body__error" style="color:red">{{ $errors->first('goods.doll_category1') }}</p>
                 </div>
                 <div>
                     <h3>人形２</h3>
@@ -59,6 +60,7 @@
                     <div class="input_basis">
                         <div><input type="radio" name="goods[basis_name]" value="ノーマル" >ノーマル</div>
                         <div><input type="radio" name="goods[basis_name]" value="ブランコ" >ブランコ</div>
+                        <p class="body__error" style="color:red">{{ $errors->first('goods.basis_name') }}</p>
                     </div>
                 </div>
             </div>
