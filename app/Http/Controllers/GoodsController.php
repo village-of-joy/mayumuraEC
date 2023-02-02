@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Goods;
-use App\Models\Doll;
+use App\Models\Dolls;
 use App\Http\Requests\GoodsRequest;
 
 class GoodsController extends Controller
@@ -15,34 +15,29 @@ class GoodsController extends Controller
     }
     
     
-<<<<<<< HEAD
-    public function store(Request $request, Goods $goods, Doll $dolls)
-    {
-        $input = $request['dolls'];
-        $dolls->fill($input)->save();
-        return redirect('/varif/'.$dolls->good->id);
-    }
-    
-    public function BoardStore(GoodsRequest $request, Goods $goods)
-=======
-    public function store(Request $request, Goods $goods)
->>>>>>> origin/dev_basis10
+    public function store(GoodsRequest $request, Goods $goods)
     {
         $input = $request['goods'];
         $goods->fill($input)->save();
-        return redirect('/boardDolls1/'.$goods->id);
+        return redirect('/varif/'.$goods->id);
     }
 
     
-    public function varif()
+    public function varif(Request $request, Goods $goods)
     {
         $basisName = $goods->basis_name;
         $basisPrice = 0;
         
+        if($basisName == '竹立'){
+            $basisPrice += 400;
+        }elseif($basisName == '竹三角'){
+            $basisPrice += 600;
+        }elseif($basisName == '竹ばさみ'){
+            $basisPrice += 650;
+        }elseif($basisName == '扇面'){
+            $basisPrice += 700;
+        }
         
-<<<<<<< HEAD
-        return view('goods/varif', compact('basisPrice'))->with(['goods'=>$goods]);
-=======
         
         
         return view('goods/varif', compact('basisPrice'))->with(['goods'=>$goods,
@@ -51,30 +46,22 @@ class GoodsController extends Controller
                                                                     'doll_category2'=>$request->input('doll_category2'),
                                                                     'doll_name2'=>$request->input('doll_name2')
                                                                 ]);
->>>>>>> origin/dev_basis10
     }
     
     
     public function board(Request $request)
     {
-<<<<<<< HEAD
-        return view('goods/board/board');
-=======
         return view('goods/board/board')->with(['doll_category1'=>$request->input('doll_category1'),
                                             'doll_name1'=>$request->input('doll_name1'),
                                             'doll_category2'=>$request->input('doll_category2'),
                                             'doll_name2'=>$request->input('doll_name2'),
                                             'basisname'=>$request->input('basisname')
                                         ]);
->>>>>>> origin/dev_basis10
     }
     
     
-    public function boardDolls1(Goods $goods)
+    public function boardDolls1(Request $request)
     {
-<<<<<<< HEAD
-        return view('goods/board/boardDolls1')->with(['goods'=>$goods]);
-=======
         return view('goods/board/boardDolls1')->with([
                                             'doll_category1'=>$request->input('doll_category1'),
                                             'doll_name1'=>$request->input('doll_name1'),
@@ -82,14 +69,10 @@ class GoodsController extends Controller
                                             'doll_name2'=>$request->input('doll_name2'),
                                             'basisname'=>$request->input('basisname')
                                         ]);
->>>>>>> origin/dev_basis10
     }
     
     public function boardDolls2(Request $request)
     {
-<<<<<<< HEAD
-        return view('goods/board/boardDolls2');
-=======
         return view('goods/board/boardDolls2')->with([
                                             'doll_category1'=>$request->input('doll_category1'),
                                             'doll_name1'=>$request->input('doll_name1'),
@@ -97,7 +80,6 @@ class GoodsController extends Controller
                                             'doll_name2'=>$request->input('doll_name2'),
                                             'basisname'=>$request->input('basisname')
                                         ]);
->>>>>>> origin/dev_basis10
     }
     
      public function shikishi(){

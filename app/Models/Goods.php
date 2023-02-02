@@ -4,7 +4,6 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Doll;
 
 class Goods extends Model
 {
@@ -23,13 +22,6 @@ class Goods extends Model
         'comment',
     ];
     
-<<<<<<< HEAD
-    public function dolls()
-    {
-        return $this->hasMany(Doll::class);
-    }
-=======
     
->>>>>>> origin/dev_basis10
     
 }

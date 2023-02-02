@@ -10,22 +10,6 @@
     <body>
         <h1>Mayumura SHOP</h1>
         <h2>確認</h2>
-<<<<<<< HEAD
-            
-        <div class="verification">
-            <p>{{$dolls->id}}</p>
-            <h3>土台：{{$dolls->category}}</h3>
-            <p>種類：{{$dolls->name}}</p>
-            <h3>土台値段</h3>
-            <p>?円</p>
-            
-                <h3>人形</h3>
-                <p>カテゴリー：{{$dolls->category}}</p>
-                <p>種類：{{$dolls->name}}</p>
-            
-        </div>
-            
-=======
             <h3>土台（カテゴリー）：{{$goods->basis_category}}</h3>
             <p>土台（種類）：{{$goods->basis_name}}</p>
             <h3>土台値段：{{$basisPrice}}</h3>
@@ -37,7 +21,6 @@
             <p>{{$goods->message}}</p>
             <h3>コメント</h3>
             <p>{{$goods->comment}}</p>
->>>>>>> origin/dev_basis10
         <script></script>
     </body>
 </html>

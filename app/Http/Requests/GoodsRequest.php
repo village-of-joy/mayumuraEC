@@ -25,6 +25,8 @@ class GoodsRequest extends FormRequest
     {
         return [
             'goods.basis_name' => 'required',
+            'goods.doll_category1' => 'required',
+            'goods.doll_name1' => 'required',
         ];
     }
 }

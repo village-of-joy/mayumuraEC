@@ -13,8 +13,6 @@
             <div class="basis">
                 <h2 class="bases">土台（木板）</h2>
             </div>
-<<<<<<< HEAD
-=======
             
             <div class="dolls">
                 <h2>人形</h2>
@@ -27,6 +25,7 @@
                         <input type="hidden" name="doll_category2" value="{{$doll_category2}}"/>
                         <input type="hidden" name="doll_name2" value="{{$doll_name2}}"/>
                     </form>
+                    <p class="body__error" style="color:red">{{ $errors->first('goods.doll_category1') }}</p>
                 </div>
                 <div>
                     <h3>人形２</h3>
@@ -40,53 +39,32 @@
                 </div>
             </div>
         </form>
->>>>>>> origin/dev_basis10
         
-            <form action="/boardDolls1" method="POST">
-                @csrf
-                <input type="hidden" name="goods[basis_category]" value="木板" />   
-                
-                <div class="basis_name">
-                    <div id="board_type">
-                        <h2>土台（種類）</h2>
-                        <div class="borad_img">
-                            <div class="img_p">
-                                <p>ノーマル</p>
-                                <img src="image/board.JPG" alt="木板ノーマル画像" width="30%" height="30%">
-                            </div>
-                            <div class="img_p">
-                                <p>ブランコ</p>
-                                <img src="image/branko.JPG" alt="木板ブランコ画像" width="30%" height="30%">
-                            </div>    
+        <form action="/varif" method="POST">
+            @csrf
+            <input type="hidden" name="goods[basis_category]" value="木板" />   
+            
+            <div class="basis_name">
+                <div id="board_type">
+                    <h2>土台（種類）</h2>
+                    <div class="borad_img">
+                        <div class="img_p">
+                            <p>ノーマル</p>
+                            <img src="image/board.JPG" alt="木板ノーマル画像" width="30%" height="30%">
                         </div>
-                        <div class="input_basis">
-                            <div><input type="radio" name="goods[basis_name]" value="ノーマル" {{ old('goods.basis_name') === 'ノーマル' ? 'checked' : '' }}>ノーマル</div>
-                            <div><input type="radio" name="goods[basis_name]" value="ブランコ" {{ old('goods.basis_name') === 'ブランコ' ? 'checked' : '' }}>ブランコ</div>
-                            <p class="title_error" style="color:red">{{ $errors->first('goods.basis_name')}}</p>
-                        </div>
+                        <div class="img_p">
+                            <p>ブランコ</p>
+                            <img src="image/branko.JPG" alt="木板ブランコ画像" width="30%" height="30%">
+                        </div>    
+                    </div>
+                    <div class="input_basis">
+                        <div><input type="radio" name="goods[basis_name]" value="ノーマル" >ノーマル</div>
+                        <div><input type="radio" name="goods[basis_name]" value="ブランコ" >ブランコ</div>
+                        <p class="body__error" style="color:red">{{ $errors->first('goods.basis_name') }}</p>
                     </div>
                 </div>
-                
-                <div class="message">
-                    <h2>メッセージ</h2>
-                    <input type="text" name="goods[message]" id="textmes" value="{{old('goods[message]')}}" maxlength="20" onkeyup="ShowLength1(value);" >
-                    <p class="caution">※10文字程度でお願いします</p>
-                    <p id="inputlength1">0文字</p>
-                </div>
-                
-                <div class="comment">
-                    <h2>コメント・要望</h2>
-                    <textarea name="goods[comment]" cols="24" rows="3" placeholder="200文字以下でお願いします" maxlength="200" onkeyup="ShowLength2(value);" >{{old('goods[comment]')}}</textarea>
-                    <p id="inputlength2">0文字</p>
-                </div>
-                
-                <input type="submit" value="人形選択" />
-                
-            </form>
+            </div>
             
-<<<<<<< HEAD
-            <a href="/"><button type="button">戻る</button></a>
-=======
             <div class="message">
                 <h2>メッセージ</h2>
                 <input type="text" name="goods[message]" id="textmes" maxlength="20" onkeyup="ShowLength1(value);" >
@@ -110,7 +88,6 @@
         
         
         <a href="/"><button type="button">戻る</button></a>
->>>>>>> origin/dev_basis10
             
         <script>
             

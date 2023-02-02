@@ -154,7 +154,8 @@ return [
     */
 
     'attributes' => [
-        'goods.basis_name' => '土台の種類',
+        'goods.basis_name' => '土台（種類）',
+        'goods.doll_category1' => '人形１',
         ],
 
 ];
