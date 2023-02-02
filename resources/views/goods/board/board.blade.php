@@ -13,6 +13,34 @@
             <div class="basis">
                 <h2 class="bases">土台（木板）</h2>
             </div>
+<<<<<<< HEAD
+=======
+            
+            <div class="dolls">
+                <h2>人形</h2>
+                <div>
+                    <h3>人形１</h3>
+                    <p>{{$doll_category1}}</p>
+                    <p>{{$doll_name1}}</p>
+                    <form action="/boardDolls1" method="GET">
+                        <input type="submit" value="追加">
+                        <input type="hidden" name="doll_category2" value="{{$doll_category2}}"/>
+                        <input type="hidden" name="doll_name2" value="{{$doll_name2}}"/>
+                    </form>
+                </div>
+                <div>
+                    <h3>人形２</h3>
+                    <p>{{$doll_category2}}</p>
+                    <p>{{$doll_name2}}</p>
+                    <form action="/boardDolls2" method="GET">
+                        <input type="submit" value="追加">
+                        <input type="hidden" name="doll_category1" value="{{$doll_category1}}"/>
+                        <input type="hidden" name="doll_name1" value="{{$doll_name1}}"/>
+                    </form>
+                </div>
+            </div>
+        </form>
+>>>>>>> origin/dev_basis10
         
             <form action="/boardDolls1" method="POST">
                 @csrf
@@ -56,7 +84,33 @@
                 
             </form>
             
+<<<<<<< HEAD
             <a href="/"><button type="button">戻る</button></a>
+=======
+            <div class="message">
+                <h2>メッセージ</h2>
+                <input type="text" name="goods[message]" id="textmes" maxlength="20" onkeyup="ShowLength1(value);" >
+                <p class="caution">※10文字程度でお願いします</p>
+                <p id="inputlength1">0文字</p>
+            </div>
+            
+            <div class="comment">
+                <h2>コメント・要望</h2>
+                <textarea name="goods[comment]" cols="24" rows="3" placeholder="200文字以下でお願いします" maxlength="200" onkeyup="ShowLength2(value);" ></textarea>
+                <p id="inputlength2">0文字</p>
+            </div>
+            
+            <input type="hidden" name="goods[doll_category1]" value="{{$doll_category1}}"/>
+            <input type="hidden" name="goods[doll_name1]" value="{{$doll_name1}}"/>
+            <input type="hidden" name="goods[doll_category2]" value="{{$doll_category2}}"/>
+            <input type="hidden" name="goods[doll_name2]" value="{{$doll_name2}}"/>
+            
+            <input type="submit" value="確認" />
+        </form>
+        
+        
+        <a href="/"><button type="button">戻る</button></a>
+>>>>>>> origin/dev_basis10
             
         <script>
             

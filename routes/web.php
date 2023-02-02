@@ -16,8 +16,13 @@ use App\Http\Controllers\DollController;
 */
 Route::get('/', [GoodsController::class, 'index']);
 
+<<<<<<< HEAD
 Route::get('/varif/{doll}', [DollController::class, 'varif']);
 Route::post('/varif', [DollController::class, 'store']);
+=======
+Route::get('/varif/{goods}', [GoodsController::class, 'varif']);
+Route::post('/varif', [GoodsController::class, 'store']);
+>>>>>>> origin/dev_basis10
 
 Route::get('/board', [GoodsController::class, 'board']);
 Route::get('/boardDolls1/{goods}', [GoodsController::class, 'boardDolls1']);

@@ -18,6 +18,10 @@ return new class extends Migration
             $table->string('basis_category', 10);
             $table->string('basis_name', 10);
             $table->string('basis_option', 10)->nullable();
+            $table->string('doll_category1', 10);
+            $table->string('doll_name1', 20);
+            $table->string('doll_category2', 10)->nullable();
+            $table->string('doll_name2', 20)->nullable();
             $table->string('message', 20)->nullable();
             $table->string('comment', 200)->nullable();
             $table->timestamps();

@@ -15,6 +15,7 @@ class GoodsController extends Controller
     }
     
     
+<<<<<<< HEAD
     public function store(Request $request, Goods $goods, Doll $dolls)
     {
         $input = $request['dolls'];
@@ -23,6 +24,9 @@ class GoodsController extends Controller
     }
     
     public function BoardStore(GoodsRequest $request, Goods $goods)
+=======
+    public function store(Request $request, Goods $goods)
+>>>>>>> origin/dev_basis10
     {
         $input = $request['goods'];
         $goods->fill($input)->save();
@@ -36,24 +40,64 @@ class GoodsController extends Controller
         $basisPrice = 0;
         
         
+<<<<<<< HEAD
         return view('goods/varif', compact('basisPrice'))->with(['goods'=>$goods]);
+=======
+        
+        
+        return view('goods/varif', compact('basisPrice'))->with(['goods'=>$goods,
+                                                                    'doll_category1'=>$request->input('doll_category1'),
+                                                                    'doll_name1'=>$request->input('doll_name1'),
+                                                                    'doll_category2'=>$request->input('doll_category2'),
+                                                                    'doll_name2'=>$request->input('doll_name2')
+                                                                ]);
+>>>>>>> origin/dev_basis10
     }
     
     
     public function board(Request $request)
     {
+<<<<<<< HEAD
         return view('goods/board/board');
+=======
+        return view('goods/board/board')->with(['doll_category1'=>$request->input('doll_category1'),
+                                            'doll_name1'=>$request->input('doll_name1'),
+                                            'doll_category2'=>$request->input('doll_category2'),
+                                            'doll_name2'=>$request->input('doll_name2'),
+                                            'basisname'=>$request->input('basisname')
+                                        ]);
+>>>>>>> origin/dev_basis10
     }
     
     
     public function boardDolls1(Goods $goods)
     {
+<<<<<<< HEAD
         return view('goods/board/boardDolls1')->with(['goods'=>$goods]);
+=======
+        return view('goods/board/boardDolls1')->with([
+                                            'doll_category1'=>$request->input('doll_category1'),
+                                            'doll_name1'=>$request->input('doll_name1'),
+                                            'doll_category2'=>$request->input('doll_category2'),
+                                            'doll_name2'=>$request->input('doll_name2'),
+                                            'basisname'=>$request->input('basisname')
+                                        ]);
+>>>>>>> origin/dev_basis10
     }
     
     public function boardDolls2(Request $request)
     {
+<<<<<<< HEAD
         return view('goods/board/boardDolls2');
+=======
+        return view('goods/board/boardDolls2')->with([
+                                            'doll_category1'=>$request->input('doll_category1'),
+                                            'doll_name1'=>$request->input('doll_name1'),
+                                            'doll_category2'=>$request->input('doll_category2'),
+                                            'doll_name2'=>$request->input('doll_name2'),
+                                            'basisname'=>$request->input('basisname')
+                                        ]);
+>>>>>>> origin/dev_basis10
     }
     
      public function shikishi(){
