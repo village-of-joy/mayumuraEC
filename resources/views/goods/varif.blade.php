@@ -12,15 +12,15 @@
         <h2>確認</h2>
             
         <div class="verification">
-            <h3>土台：{{$goods->basis_category}}</h3>
-            <p>種類：{{$goods->basis_name}}</p>
+            <p>{{$dolls->id}}</p>
+            <h3>土台：{{$dolls->category}}</h3>
+            <p>種類：{{$dolls->name}}</p>
             <h3>土台値段</h3>
             <p>{{$basisPrice}}円</p>
-            @foreach($goods as $good)
+            
                 <h3>人形</h3>
-                <p>カテゴリー：{{$good->dolls_category}}</p>
-                <p>種類：{{$good->dolls_name}}</p>
-            @endforeach
+                <p>カテゴリー：{{$dolls->category}}</p>
+                <p>種類：{{$dolls->name}}</p>
             
         </div>
             

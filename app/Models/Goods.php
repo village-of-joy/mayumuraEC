@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Doll;
 
 class Goods extends Model
 {
@@ -20,7 +21,7 @@ class Goods extends Model
     
     public function dolls()
     {
-        return $this->hasMany(Dolls::class);
+        return $this->hasMany(Doll::class);
     }
     
 }
