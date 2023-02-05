@@ -27,6 +27,8 @@ class GoodsController extends Controller
     {
         $basisName = $goods->basis_name;
         $basisPrice = 0;
+        $doll2 = $goods->doll_name2;
+        $dollPrice = 800;
         
         if($basisName == '竹立'){
             $basisPrice += 400;
@@ -36,11 +38,21 @@ class GoodsController extends Controller
             $basisPrice += 650;
         }elseif($basisName == '扇面'){
             $basisPrice += 700;
+        }elseif($basisName == 'ブランコ'){
+            $basisPrice += 50;
+            if(empty('$doll2')){
+                $basisPrice -= 50;
+            }
         }
         
+        if($doll2 != null){
+            $dollPrice += 700;
+            if($basisName == 'ブランコ'){
+                $dollPrice += 50;
+            }
+        }
         
-        
-        return view('goods/varif', compact('basisPrice'))->with(['goods'=>$goods,
+        return view('goods/varif', compact('basisPrice', 'dollPrice'))->with(['goods'=>$goods,
                                                                     'doll_category1'=>$request->input('doll_category1'),
                                                                     'doll_name1'=>$request->input('doll_name1'),
                                                                     'doll_category2'=>$request->input('doll_category2'),

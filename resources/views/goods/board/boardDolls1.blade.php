@@ -25,11 +25,6 @@
                 
                 <h2>種類</h2>
                 <div id="animal">
-                    <select id="animal_type" onchange="AnimalTypeCange();">
-                        <option value="1">ねこ</option>
-                        <option value="2">かめ</option>
-                        <option value="3">ふくろう</option>
-                    </select>
                     
                     <div id="cat">
                         <div class="cat">
@@ -43,24 +38,24 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name1" value="cat">ねこ（ノーマル）</div>
-                            <div><input type="radio" name="doll_name1" value="cat_smile">ねこ（笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="ねこ（ノーマル）">ねこ（ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="ねこ（笑顔）">ねこ（笑顔）</div>
                         </div>
                     </div>
                     
-                    <div id="turtle" style="display:none">
+                    <div id="turtle" >
                         <div class="turtle">
                             <div class="img_p">
                                 <img src="image/turtle_small.JPG" alt="かめ画像" width="30%" head="30%">
                                 <p>かめ</p>
                             </div>
                             <div class="input">
-                                <div><input type="radio" name="doll_name1" value="turtle">かめ</div>
+                                <div><input type="radio" name="doll_name1" value="かめ">かめ</div>
                             </div>
                         </div>
                     </div>
                     
-                    <div id="owl" style="display:none">
+                    <div id="owl" >
                         <div class="owl">
                             <div class="img_p">
                                 <img src="image/owl.JPG" alt="ふくろう画像" width="30%" height="30%">
@@ -68,26 +63,12 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name1" value="owl">ふくろう</div>
+                            <div><input type="radio" name="doll_name1" value="ふくろう">ふくろう</div>
                         </div>
                     </div>
                 </div>
                 
                 <div id="zodiac" style="display:none">
-           　  　     <select id="selbox" onchange="change();">
-                        <option value="1">子（ねずみ）</option>
-                　　      <option value="2">丑（うし）</option>
-                　       <option value="3">寅（とら）</option>
-                　　　     <option value="4">卯（うさぎ）</option>
-                　       <option value="5">辰（龍）</option>
-                        <option value="6">巳（へび）</option>
-                　　      <option value="7">午（うま）</option>
-                　　      <option value="8">未（ひつじ）</option>
-                　　      <option value="9">申（さる）</option>
-                　　      <option value="10">酉（とり）</option>
-                　　      <option value="11">戌（いぬ）</option>
-                　　　     <option value="12">亥（いのしし）</option>
-                　　</select>
                 　　
                 　　<div id="mouse">
                         <div class="mouse">
@@ -101,12 +82,12 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name1" value="mouse">子（ねずみ・ノーマル）</div>
-                            <div><input type="radio" name="doll_name1" value="mouse_smile">子（ねずみ・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="子（ねずみ・ノーマル）">子（ねずみ・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="子（ねずみ・笑顔">子（ねずみ・笑顔）</div>
                         </div>
                 　　</div>
                 　　
-                　　<div id="cow" style="display:none">
+                　　<div id="cow" >
                         <div class="cow">
                             <div class="img_p">
                                 <img src="image/cow.JPG" alt="丑（うし・ノーマル）" width="30%" height="30%">
@@ -118,12 +99,12 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name1" value="cow">丑（うし・ノーマル）</div>
-                            <div><input type="radio" name="doll_name1" value="cow_smile">丑（うし・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="丑（うし・ノーマル">丑（うし・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="丑（うし・笑顔">丑（うし・笑顔）</div>
                         </div>
                 　　</div>
                 　　
-                　　<div id="tiger" style="display:none">
+                　　<div id="tiger" >
                         <div class="tiger">
                             <div class="img_p">
                                 <img src="image/tiger.JPG" alt="寅（とら・ノーマル）" width="30%" height="30%">
@@ -135,12 +116,12 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name1" value="tiger">寅（とら・ノーマル）</div>
-                            <div><input type="radio" name="doll_name1" value="tiger_smile">寅（とら・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="寅（とら・ノーマル）">寅（とら・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="寅（とら・笑顔">寅（とら・笑顔）</div>
                         </div>
                 　　</div>
                 　　
-                　　<div id="rabbit" style="display:none">
+                　　<div id="rabbit" >
                         <div class="rabbit">
                             <div class="img_p">
                                 <img src="image/rabbit.JPG" alt="卯（うさぎ・ノーマル）" width="30%" height="30%">
@@ -152,12 +133,12 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name1" value="rabbit">卯（うさぎ・ノーマル）</div>
-                            <div><input type="radio" name="doll_name1" value="rabbit_smile">卯（うさぎ・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="卯（うさぎ・ノーマル）">卯（うさぎ・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="卯（うさぎ・笑顔）">卯（うさぎ・笑顔）</div>
                         </div>
                 　　</div>
                 　　
-                　　<div id="dragon" style="display:none">
+                　　<div id="dragon" >
                         <div class="dragon">
                             <div class="img_p">
                                 <img src="image/dragon.JPG" alt="辰（龍・ノーマル）" width="30%" height="30%">
@@ -169,12 +150,12 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name1" value="dragon">辰（龍・ノーマル）</div>
-                            <div><input type="radio" name="doll_name1" value="dragon_smile">辰（龍・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="辰（龍・ノーマル）">辰（龍・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="辰（龍・笑顔）">辰（龍・笑顔）</div>
                         </div>
                 　　</div>
                 　　
-                　　<div id="snake" style="display:none">
+                　　<div id="snake" >
                         <div class="snake">
                             <div class="img_p">
                                 <img src="image/snake.JPG" alt="巳（へび・ノーマル）" width="30%" height="30%">
@@ -186,12 +167,12 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name1" value="snake">巳（へび・ノーマル）</div>
-                            <div><input type="radio" name="doll_name1" value="snake_smile">巳（へび・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="巳（へび・ノーマル）">巳（へび・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="巳（へび・笑顔）">巳（へび・笑顔）</div>
                         </div>
                 　　</div>
                 　　
-                　　<div id="horse" style="display:none">
+                　　<div id="horse" >
                         <div class="horse">
                             <div class="img_p">
                                 <img src="image/horse.JPG" alt="午（うま・ノーマル）" width="30%" height="30%">
@@ -203,12 +184,12 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name1" value="horse">午（うま・ノーマル）</div>
-                            <div><input type="radio" name="doll_name1" value="horse_smile">午（うま・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="午（うま・ノーマル）">午（うま・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="午（うま・笑顔）">午（うま・笑顔）</div>
                         </div>
                 　　</div>
                 　　
-                　　<div id="sheep" style="display:none">
+                　　<div id="sheep" >
                         <div class="sheep">
                             <div class="img_p">
                                 <img src="image/sheep.JPG" alt="未（ひつじ・ノーマル）" width="30%" height="30%">
@@ -220,12 +201,12 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name1" value="sheep">未（ひつじ・ノーマル）</div>
-                            <div><input type="radio" name="doll_name1" value="sheep_smile">未（ひつじ・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="未（ひつじ・ノーマル）">未（ひつじ・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="未（ひつじ・笑顔）">未（ひつじ・笑顔）</div>
                         </div>
                 　　</div>
                 　　
-                　　<div id="monkey" style="display:none">
+                　　<div id="monkey" >
                         <div class="monkey">
                             <div class="img_p">
                                 <img src="image/monkey.JPG" alt="申（さる・ノーマル）" width="30%" height="30%">
@@ -237,12 +218,12 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name1" value="monkey">申（さる・ノーマル）</div>
-                            <div><input type="radio" name="doll_name1" value="monkey_smile">申（さる・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="申（さる・ノーマル）">申（さる・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="申（さる・笑顔）">申（さる・笑顔）</div>
                         </div>
                 　　</div>
                 　　
-                　　<div id="bird" style="display:none">
+                　　<div id="bird" >
                         <div class="bird">
                             <div class="img_p">
                                 <img src="image/bird.JPG" alt="酉（とり・ノーマル）" width="30%" height="30%">
@@ -254,12 +235,12 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name1" value="bird">酉（とり・ノーマル）</div>
-                            <div><input type="radio" name="doll_name1" value="bird_smile">酉（とり・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="酉（とり・ノーマル">酉（とり・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="酉（とり・笑顔）">酉（とり・笑顔）</div>
                         </div>
                 　　</div>
                 　　
-                　　<div id="dog" style="display:none">
+                　　<div id="dog" >
                         <div class="dog">
                             <div class="img_p">
                                 <img src="image/dog.JPG" alt="戌（いぬ・ノーマル）" width="30%" height="30%">
@@ -271,12 +252,12 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name1" value="dog">戌（いぬ・ノーマル）</div>
-                            <div><input type="radio" name="doll_name1" value="dog_smile">戌（いぬ・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="戌（いぬ・ノーマル）">戌（いぬ・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="戌（いぬ・笑顔）">戌（いぬ・笑顔）</div>
                         </div>
                 　　</div>
                 　　
-                　　<div id="boar" style="display:none">
+                　　<div id="boar" >
                         <div class="boar">
                             <div class="img_p">
                                 <img src="image/boar.JPG" alt="亥（いのしし・ノーマル）" width="30%" height="30%">
@@ -288,8 +269,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name1" value="boar">亥（いのしし・ノーマル）</div>
-                            <div><input type="radio" name="doll_name1" value="boar_smile">亥（いのしし・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="亥（いのしし・ノーマル）">亥（いのしし・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="亥（いのしし・笑顔）">亥（いのしし・笑顔）</div>
                         </div>
                 　　</div>
             　　</div>
@@ -320,190 +301,9 @@
                 }
             }
             
-            function AnimalTypeCange(){
-                if(document.getElementById("animal_type"))
-                {
-                    selboxValue = document.getElementById("animal_type").value;
-                    if(selboxValue == "1"){
-                        document.getElementById("cat").style.display = "";
-                        document.getElementById("turtle").style.display = "none";
-                        document.getElementById("owl").style.display = "none";
-                    }else if (selboxValue == "2"){
-                        document.getElementById("cat").style.display = "none";
-                        document.getElementById("turtle").style.display = "";
-                        document.getElementById("owl").style.display = "none";
-                    }else if (selboxValue == "3"){
-                        document.getElementById("cat").style.display = "none";
-                        document.getElementById("turtle").style.display = "none";
-                        document.getElementById("owl").style.display = "";
-                    }
-                }
-            }
             
-            function change(){
-                if(document.getElementById("selbox"))
-                {
-                    selboxValue = document.getElementById("selbox").value;
-                    if(selboxValue == "1"){
-                        document.getElementById("mouse").style.display = "";
-                        document.getElementById("cow").style.display = "none";
-                        document.getElementById("tiger").style.display = "none";
-                        document.getElementById("rabbit").style.display = "none";
-                        document.getElementById("dragon").style.display = "none";
-                        document.getElementById("snake").style.display = "none";
-                        document.getElementById("horse").style.display = "none";
-                        document.getElementById("sheep").style.display = "none";
-                        document.getElementById("monkey").style.display = "none";
-                        document.getElementById("bird").style.display = "none";
-                        document.getElementById("dog").style.display = "none";
-                        document.getElementById("boar").style.display = "none";
-                    }else if (selboxValue == "2"){
-                        document.getElementById("mouse").style.display = "none";
-                        document.getElementById("cow").style.display = "";
-                        document.getElementById("tiger").style.display = "none";
-                        document.getElementById("rabbit").style.display = "none";
-                        document.getElementById("dragon").style.display = "none";
-                        document.getElementById("snake").style.display = "none";
-                        document.getElementById("horse").style.display = "none";
-                        document.getElementById("sheep").style.display = "none";
-                        document.getElementById("monkey").style.display = "none";
-                        document.getElementById("bird").style.display = "none";
-                        document.getElementById("dog").style.display = "none";
-                        document.getElementById("boar").style.display = "none";
-                    }else if (selboxValue == "3"){
-                        document.getElementById("mouse").style.display = "none";
-                        document.getElementById("cow").style.display = "none";
-                        document.getElementById("tiger").style.display = "";
-                        document.getElementById("rabbit").style.display = "none";
-                        document.getElementById("dragon").style.display = "none";
-                        document.getElementById("snake").style.display = "none";
-                        document.getElementById("horse").style.display = "none";
-                        document.getElementById("sheep").style.display = "none";
-                        document.getElementById("monkey").style.display = "none";
-                        document.getElementById("bird").style.display = "none";
-                        document.getElementById("dog").style.display = "none";
-                        document.getElementById("boar").style.display = "none";
-                    }else if (selboxValue == "4"){
-                        document.getElementById("mouse").style.display = "none";
-                        document.getElementById("cow").style.display = "none";
-                        document.getElementById("tiger").style.display = "none";
-                        document.getElementById("rabbit").style.display = "";
-                        document.getElementById("dragon").style.display = "none";
-                        document.getElementById("snake").style.display = "none";
-                        document.getElementById("horse").style.display = "none";
-                        document.getElementById("sheep").style.display = "none";
-                        document.getElementById("monkey").style.display = "none";
-                        document.getElementById("bird").style.display = "none";
-                        document.getElementById("dog").style.display = "none";
-                        document.getElementById("boar").style.display = "none";
-                    }else if (selboxValue == "5"){
-                        document.getElementById("mouse").style.display = "none";
-                        document.getElementById("cow").style.display = "none";
-                        document.getElementById("tiger").style.display = "none";
-                        document.getElementById("rabbit").style.display = "none";
-                        document.getElementById("dragon").style.display = "";
-                        document.getElementById("snake").style.display = "none";
-                        document.getElementById("horse").style.display = "none";
-                        document.getElementById("sheep").style.display = "none";
-                        document.getElementById("monkey").style.display = "none";
-                        document.getElementById("bird").style.display = "none";
-                        document.getElementById("dog").style.display = "none";
-                        document.getElementById("boar").style.display = "none";
-                    }else if (selboxValue == "6"){
-                        document.getElementById("mouse").style.display = "none";
-                        document.getElementById("cow").style.display = "none";
-                        document.getElementById("tiger").style.display = "none";
-                        document.getElementById("rabbit").style.display = "none";
-                        document.getElementById("dragon").style.display = "none";
-                        document.getElementById("snake").style.display = "";
-                        document.getElementById("horse").style.display = "none";
-                        document.getElementById("sheep").style.display = "none";
-                        document.getElementById("monkey").style.display = "none";
-                        document.getElementById("bird").style.display = "none";
-                        document.getElementById("dog").style.display = "none";
-                        document.getElementById("boar").style.display = "none";
-                    }else if (selboxValue == "7"){
-                        document.getElementById("mouse").style.display = "none";
-                        document.getElementById("cow").style.display = "none";
-                        document.getElementById("tiger").style.display = "none";
-                        document.getElementById("rabbit").style.display = "none";
-                        document.getElementById("dragon").style.display = "none";
-                        document.getElementById("snake").style.display = "none";
-                        document.getElementById("horse").style.display = "";
-                        document.getElementById("sheep").style.display = "none";
-                        document.getElementById("monkey").style.display = "none";
-                        document.getElementById("bird").style.display = "none";
-                        document.getElementById("dog").style.display = "none";
-                        document.getElementById("boar").style.display = "none";
-                    }else if (selboxValue == "8"){
-                        document.getElementById("mouse").style.display = "none";
-                        document.getElementById("cow").style.display = "none";
-                        document.getElementById("tiger").style.display = "none";
-                        document.getElementById("rabbit").style.display = "none";
-                        document.getElementById("dragon").style.display = "none";
-                        document.getElementById("snake").style.display = "none";
-                        document.getElementById("horse").style.display = "none";
-                        document.getElementById("sheep").style.display = "";
-                        document.getElementById("monkey").style.display = "none";
-                        document.getElementById("bird").style.display = "none";
-                        document.getElementById("dog").style.display = "none";
-                        document.getElementById("boar").style.display = "none";
-                    }else if (selboxValue == "9"){
-                        document.getElementById("mouse").style.display = "none";
-                        document.getElementById("cow").style.display = "none";
-                        document.getElementById("tiger").style.display = "none";
-                        document.getElementById("rabbit").style.display = "none";
-                        document.getElementById("dragon").style.display = "none";
-                        document.getElementById("snake").style.display = "none";
-                        document.getElementById("horse").style.display = "none";
-                        document.getElementById("sheep").style.display = "none";
-                        document.getElementById("monkey").style.display = "";
-                        document.getElementById("bird").style.display = "none";
-                        document.getElementById("dog").style.display = "none";
-                        document.getElementById("boar").style.display = "none";
-                    }else if (selboxValue == "10"){
-                        document.getElementById("mouse").style.display = "none";
-                        document.getElementById("cow").style.display = "none";
-                        document.getElementById("tiger").style.display = "none";
-                        document.getElementById("rabbit").style.display = "none";
-                        document.getElementById("dragon").style.display = "none";
-                        document.getElementById("snake").style.display = "none";
-                        document.getElementById("horse").style.display = "none";
-                        document.getElementById("sheep").style.display = "none";
-                        document.getElementById("monkey").style.display = "none";
-                        document.getElementById("bird").style.display = "";
-                        document.getElementById("dog").style.display = "none";
-                        document.getElementById("boar").style.display = "none";
-                    }else if (selboxValue == "11"){
-                        document.getElementById("mouse").style.display = "none";
-                        document.getElementById("cow").style.display = "none";
-                        document.getElementById("tiger").style.display = "none";
-                        document.getElementById("rabbit").style.display = "none";
-                        document.getElementById("dragon").style.display = "none";
-                        document.getElementById("snake").style.display = "none";
-                        document.getElementById("horse").style.display = "none";
-                        document.getElementById("sheep").style.display = "none";
-                        document.getElementById("monkey").style.display = "none";
-                        document.getElementById("bird").style.display = "none";
-                        document.getElementById("dog").style.display = "";
-                        document.getElementById("boar").style.display = "none";
-                    }else if (selboxValue == "12"){
-                        document.getElementById("mouse").style.display = "none";
-                        document.getElementById("cow").style.display = "none";
-                        document.getElementById("tiger").style.display = "none";
-                        document.getElementById("rabbit").style.display = "none";
-                        document.getElementById("dragon").style.display = "none";
-                        document.getElementById("snake").style.display = "none";
-                        document.getElementById("horse").style.display = "none";
-                        document.getElementById("sheep").style.display = "none";
-                        document.getElementById("monkey").style.display = "none";
-                        document.getElementById("bird").style.display = "none";
-                        document.getElementById("dog").style.display = "none";
-                        document.getElementById("boar").style.display = "";
-                        
-                    }
-                }
-            }
+            
+            
         </script>
     </body>
 </html>
