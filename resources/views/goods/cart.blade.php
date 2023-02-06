@@ -9,8 +9,11 @@
 
     <body>
         <h1>Mayumura SHOP</h1>
-        <h2>確認</h2>
-            
+        <h2>カート</h2>
+            @foreach($goods as $good)
+                <p>{{$good->basis_name}}</p>
+                <p>{{$good->price->price}}</p>
+            @endforeach
         <script></script>
     </body>
 </html>

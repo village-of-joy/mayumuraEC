@@ -25,3 +25,6 @@ Route::get('/boardDolls2', [GoodsController::class, 'boardDolls2']);
 
 Route::get('/shikishi', [GoodsController::class, 'shikishi']);
 Route::get('/shikishiDolls', [GoodsController::class, 'shikishiDolls']);
+
+Route::get('/cart/{price}', [GoodsController::class, 'cart']);
+Route::post('/cart', [GoodsController::class, 'cartStore']);
