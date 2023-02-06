@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Goods;
-use App\Models\Dolls;
+use App\Models\Price;
 use App\Http\Requests\GoodsRequest;
 
 class GoodsController extends Controller
@@ -29,6 +29,7 @@ class GoodsController extends Controller
         $basisPrice = 0;
         $doll2 = $goods->doll_name2;
         $dollPrice = 800;
+        $goodsPrice = 0;
         
         if($basisName == '竹立'){
             $basisPrice += 400;
@@ -52,7 +53,9 @@ class GoodsController extends Controller
             }
         }
         
-        return view('goods/varif', compact('basisPrice', 'dollPrice'))->with(['goods'=>$goods,
+        $goodsPrice = $basisPrice + $dollPrice;
+        
+        return view('goods/varif', compact('basisPrice', 'dollPrice', 'goodsPrice'))->with(['goods'=>$goods,
                                                                     'doll_category1'=>$request->input('doll_category1'),
                                                                     'doll_name1'=>$request->input('doll_name1'),
                                                                     'doll_category2'=>$request->input('doll_category2'),
@@ -102,5 +105,17 @@ class GoodsController extends Controller
         return view('goods/shikishiDolls');
     }
     
+    
+    public function cartStore(Request $request, Price $price)
+    {
+        $input = $request['price'];
+        $price->fill($input)->save();
+        return redirect('/cart/'.$price->goods_id);
+    }
+    
+    public function cart(Goods $goods)
+    {
+        return view('goods/cart')->with(['goods'=>$goods->get()]);
+    }
     
 }

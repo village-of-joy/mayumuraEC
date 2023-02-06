@@ -23,5 +23,8 @@ class Goods extends Model
     ];
     
     
-    
+    public function price()
+    {
+        return $this->hasOne(Price::class);
+    }
 }
