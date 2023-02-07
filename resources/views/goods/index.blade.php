@@ -8,12 +8,16 @@
     </head>
     
     <body>
-        <h1>Mayumura SHOP</h1>
+        <h1>まゆ村 嵐山店</h1>
         <h2>購入</h2>
         <dev>
             <h3>土台を選択</h3>
             <a href="/board"><button>木板</button></a>
             <a href="/shikishi"><button>色紙</button></a>
+            <br>
+        </dev>
+        <dev>
+            <a href="/cart/show"><button>カート</button></a>
         </dev>
         <script></script>
     </body>

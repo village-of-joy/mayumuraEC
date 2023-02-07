@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '_', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <title>まゆ村 木板購入</title>
+        <title>まゆ村 色紙購入</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link href="css/goods.css" rel="stylesheet">
@@ -11,7 +11,7 @@
     <body>
         <h1>まゆ村 嵐山店</h1>
             <div class="basis">
-                <h2 class="bases">土台（木板）</h2>
+                <h2 class="bases">土台（色紙）</h2>
             </div>
             
             <div class="dolls">
@@ -20,7 +20,7 @@
                     <h3>人形１</h3>
                     <p>{{$doll_category1}}</p>
                     <p>{{$doll_name1}}</p>
-                    <form action="/boardDolls1" method="GET">
+                    <form action="/shikishiDolls1" method="GET">
                         @csrf
                         <input type="submit" value="追加">
                         <input type="hidden" name="doll_category2" value="{{$doll_category2}}"/>
@@ -32,7 +32,7 @@
                     <h3>人形２</h3>
                     <p>{{$doll_category2}}</p>
                     <p>{{$doll_name2}}</p>
-                    <form action="/boardDolls2" method="GET">
+                    <form action="/shikishiDolls2" method="GET">
                         @csrf
                         <input type="submit" value="追加">
                         <input type="hidden" name="doll_category1" value="{{$doll_category1}}"/>
@@ -44,7 +44,7 @@
         
         <form action="/varif" method="POST">
             @csrf
-            <input type="hidden" name="goods[basis_category]" value="木板" />   
+            <input type="hidden" name="goods[basis_category]" value="色紙" />   
             
             <div class="basis_name">
                 <div id="board_type">
@@ -52,16 +52,31 @@
                     <div class="borad_img">
                         <div class="img_p">
                             <p>ノーマル</p>
-                            <img src="image/board.JPG" alt="木板ノーマル画像" width="30%" height="30%">
+                            <img src="image/taketatu.JPG" alt="色紙ノーマル画像" width="30%" height="30%">
                         </div>
                         <div class="img_p">
-                            <p>ブランコ</p>
-                            <img src="image/branko.JPG" alt="木板ブランコ画像" width="30%" height="30%">
+                            <p>竹立</p>
+                            <img src="image/taketatu.JPG" alt="色紙竹立画像" width="30%" height="30%">
+                        </div>
+                        <div class="img_p">
+                            <p>竹三角</p>
+                            <img src="image/takesankaku.JPG" alt="色紙竹三角画像" width="30%" height="30%">
+                        </div>
+                        <div class="img_p">
+                            <p>竹ばさみ</p>
+                            <img src="image/takebasami.JPG" alt="色紙竹ばさみ画像" width="30%" height="30%">
+                        </div>
+                        <div class="img_p">
+                            <p>扇面</p>
+                            <img src="image/ougimen.JPG" alt="色紙扇面画像" width="30%" height="30%">
                         </div>    
                     </div>
                     <div class="input_basis">
                         <div><input type="radio" name="goods[basis_name]" value="ノーマル" >ノーマル</div>
-                        <div><input type="radio" name="goods[basis_name]" value="ブランコ" >ブランコ</div>
+                        <div><input type="radio" name="goods[basis_name]" value="竹立" >竹立</div>
+                        <div><input type="radio" name="goods[basis_name]" value="竹三角" >竹三角</div>
+                        <div><input type="radio" name="goods[basis_name]" value="竹ばさみ" >竹ばさみ</div>
+                        <div><input type="radio" name="goods[basis_name]" value="扇面" >扇面</div>
                         <p class="body__error" style="color:red">{{ $errors->first('goods.basis_name') }}</p>
                     </div>
                 </div>

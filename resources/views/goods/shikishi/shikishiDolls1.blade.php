@@ -11,26 +11,20 @@
     <body>
         <h1>Mayumura SHOP</h1>
         
-        <form action="/board" method="GET">
+        <form action="/shikishi" method="GET">
             @csrf
             <div id="dolls">
-                <h2>人形2</h2>
+                <h2>人形１</h2>
                 <div clss="category">
                     <h3>カテゴリー</h3>
-                    <select id="dolls_type" name="doll_category2" onchange="DollsTypeCange();">
+                    <select id="dolls_type" name="doll_category1" onchange="DollsTypeCange();">
                         <option value="動物">動物</option>
                         <option value="十二支">十二支</option>
-                        <option value="">なし</option>
                     </select>
                 </div>
                 
                 <h2>種類</h2>
                 <div id="animal">
-                    <select id="animal_type" onchange="AnimalTypeCange();">
-                        <option value="1">ねこ</option>
-                        <option value="2">かめ</option>
-                        <option value="3">ふくろう</option>
-                    </select>
                     
                     <div id="cat">
                         <div class="cat">
@@ -44,8 +38,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name2" value="ねこ（ノーマル）">ねこ（ノーマル）</div>
-                            <div><input type="radio" name="doll_name2" value="ねこ（笑顔）">ねこ（笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="ねこ（ノーマル）">ねこ（ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="ねこ（笑顔）">ねこ（笑顔）</div>
                         </div>
                     </div>
                     
@@ -56,7 +50,7 @@
                                 <p>かめ</p>
                             </div>
                             <div class="input">
-                                <div><input type="radio" name="doll_name2" value="かめ">かめ</div>
+                                <div><input type="radio" name="doll_name1" value="かめ">かめ</div>
                             </div>
                         </div>
                     </div>
@@ -69,7 +63,7 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name2" value="ふくろう">ふくろう</div>
+                            <div><input type="radio" name="doll_name1" value="ふくろう">ふくろう</div>
                         </div>
                     </div>
                 </div>
@@ -88,8 +82,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name2" value="子（ねずみ・ノーマル）">子（ねずみ・ノーマル）</div>
-                            <div><input type="radio" name="doll_name2" value="子（ねずみ・笑顔）">子（ねずみ・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="子（ねずみ・ノーマル）">子（ねずみ・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="子（ねずみ・笑顔">子（ねずみ・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -105,8 +99,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name2" value="丑（うし・ノーマル">丑（うし・ノーマル）</div>
-                            <div><input type="radio" name="doll_name2" value="丑（うし・笑顔）">丑（うし・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="丑（うし・ノーマル">丑（うし・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="丑（うし・笑顔">丑（うし・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -122,8 +116,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name2" value="寅（とら・ノーマル）">寅（とら・ノーマル）</div>
-                            <div><input type="radio" name="doll_name2" value="寅（とら・笑顔）">寅（とら・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="寅（とら・ノーマル）">寅（とら・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="寅（とら・笑顔">寅（とら・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -139,8 +133,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name2" value="卯（うさぎ・ノーマル）">卯（うさぎ・ノーマル）</div>
-                            <div><input type="radio" name="doll_name2" value="卯（うさぎ・笑顔）">卯（うさぎ・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="卯（うさぎ・ノーマル）">卯（うさぎ・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="卯（うさぎ・笑顔）">卯（うさぎ・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -156,8 +150,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name2" value="辰（龍・ノーマル）">辰（龍・ノーマル）</div>
-                            <div><input type="radio" name="doll_name2" value="辰（龍・笑顔）">辰（龍・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="辰（龍・ノーマル）">辰（龍・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="辰（龍・笑顔）">辰（龍・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -173,8 +167,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name2" value="巳（へび・ノーマル）">巳（へび・ノーマル）</div>
-                            <div><input type="radio" name="doll_name2" value="巳（へび・笑顔）">巳（へび・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="巳（へび・ノーマル）">巳（へび・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="巳（へび・笑顔）">巳（へび・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -190,8 +184,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name2" value="午（うま・ノーマル）">午（うま・ノーマル）</div>
-                            <div><input type="radio" name="doll_name2" value="午（うま・笑顔）">午（うま・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="午（うま・ノーマル）">午（うま・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="午（うま・笑顔）">午（うま・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -207,8 +201,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name2" value="未（ひつじ・ノーマル）">未（ひつじ・ノーマル）</div>
-                            <div><input type="radio" name="doll_name2" value="未（ひつじ・笑顔）">未（ひつじ・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="未（ひつじ・ノーマル）">未（ひつじ・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="未（ひつじ・笑顔）">未（ひつじ・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -224,8 +218,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name2" value="申（さる・ノーマル）">申（さる・ノーマル）</div>
-                            <div><input type="radio" name="doll_name2" value="申（さる・笑顔）">申（さる・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="申（さる・ノーマル）">申（さる・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="申（さる・笑顔）">申（さる・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -241,8 +235,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name2" value="酉（とり・ノーマル）">酉（とり・ノーマル）</div>
-                            <div><input type="radio" name="doll_name2" value="酉（とり・笑顔）">酉（とり・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="酉（とり・ノーマル">酉（とり・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="酉（とり・笑顔）">酉（とり・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -258,8 +252,8 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name2" value="戌（いぬ・ノーマル）">戌（いぬ・ノーマル）</div>
-                            <div><input type="radio" name="doll_name2" value="戌（いぬ・笑顔）">戌（いぬ・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="戌（いぬ・ノーマル）">戌（いぬ・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="戌（いぬ・笑顔）">戌（いぬ・笑顔）</div>
                         </div>
                 　　</div>
                 　　
@@ -275,19 +269,15 @@
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name2" value="亥（いのしし・ノーマル）">亥（いのしし・ノーマル）</div>
-                            <div><input type="radio" name="doll_name2" value="亥（いのしし・笑顔）">亥（いのしし・笑顔）</div>
+                            <div><input type="radio" name="doll_name1" value="亥（いのしし・ノーマル）">亥（いのしし・ノーマル）</div>
+                            <div><input type="radio" name="doll_name1" value="亥（いのしし・笑顔）">亥（いのしし・笑顔）</div>
                         </div>
                 　　</div>
             　　</div>
             　　
-            　　<div id="none" style="display:none">
-                    <dev><input type="radio" name="doll_name2" value="">なし</dev>
-            　　</div>
-            　　
             </div>
-            <input type="hidden" name="doll_category1" value="{{$doll_category1}}"/>
-            <input type="hidden" name="doll_name1" value="{{$doll_name1}}"/>
+            <input type="hidden" name="doll_category2" value="{{$doll_category2}}"/>
+            <input type="hidden" name="doll_name2" value="{{$doll_name2}}"/>
             
             <input type="submit" value="確定"/>
         </form>
@@ -301,18 +291,14 @@
                     if(selboxValue == "動物"){
                         document.getElementById("zodiac").style.display = "none";
                         document.getElementById("animal").style.display = "";
-                        document.getElementById("none").style.display = "none";
                     }else if (selboxValue == "十二支"){
                         document.getElementById("zodiac").style.display = "";
                         document.getElementById("animal").style.display = "none";
-                        document.getElementById("none").style.display = "none";
-                    }else{
-                        document.getElementById("zodiac").style.display ="none";
-                        document.getElementById("animal").style.display ="none";
-                        document.getElementById("none").style.display = "";
                     }
                 }
             }
+            
+            
             
             
         </script>

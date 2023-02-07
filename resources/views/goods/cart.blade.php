@@ -10,10 +10,38 @@
     <body>
         <h1>Mayumura SHOP</h1>
         <h2>カート</h2>
+            @php
+                $total = 0;
+                $num = 0;
+            @endphp
             @foreach($goods as $good)
-                <p>{{$good->basis_name}}</p>
-                <p>{{$good->price->price}}</p>
+                @php
+                    $num += 1;
+                @endphp
+                <p>{{$num}}</p>
+                <a href="/show/{{$good->id}}"><p>{{$good->basis_category}}:{{$good->basis_name}}</p></a>
+                <p>{{$good->price->price}}円</p>
+                @php
+                    $total += $good->price->price;
+                @endphp
+                <form action="/cart/{{$good->id}}" id="form_{{$good->id}}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button type="button" onclick="deleteGoods({{$good->id}})">削除</button>
+                </form>
             @endforeach
-        <script></script>
+            <h2>合計金額</h2>
+            <p>{{$total}}円</p>
+            <a href="/"><button>トップへ</button></a>
+        <script>
+            
+        function deleteGoods(id) {
+        'use strict'
+
+        if (confirm('本当に削除しますか？')) {
+            document.getElementById(`form_${id}`).submit();
+        }
+    }
+        </script>
     </body>
 </html>

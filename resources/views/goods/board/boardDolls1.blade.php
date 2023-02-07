@@ -275,8 +275,6 @@
                 　　</div>
             　　</div>
             　　
-            　　
-            　　
             </div>
             <input type="hidden" name="doll_category2" value="{{$doll_category2}}"/>
             <input type="hidden" name="doll_name2" value="{{$doll_name2}}"/>
@@ -284,7 +282,6 @@
             <input type="submit" value="確定"/>
         </form>
         
-        <a href="/board"><button>戻る</button></a>
         
         <script>
             function DollsTypeCange(){

@@ -11,7 +11,7 @@
     <body>
         <h1>Mayumura SHOP</h1>
         
-        <form action="/board" method="GET">
+        <form action="/shikishi" method="GET">
             @csrf
             <div id="dolls">
                 <h2>人形2</h2>
@@ -75,7 +75,7 @@
                 </div>
                 
                 <div id="zodiac" style="display:none">
-                　　
+           　  　   
                 　　<div id="mouse">
                         <div class="mouse">
                             <div class="img_p">
@@ -282,7 +282,7 @@
             　　</div>
             　　
             　　<div id="none" style="display:none">
-                    <dev><input type="radio" name="doll_name2" value="">なし</dev>
+                    <div><input type="radio" name="doll_name2" value="">なし</div>
             　　</div>
             　　
             </div>

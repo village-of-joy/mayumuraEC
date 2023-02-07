@@ -20,27 +20,8 @@
             <p>{{$goods->message}}</p>
             <h3>コメント</h3>
             <p>{{$goods->comment}}</p>
-            <h3>金額：{{$goodsPrice}}</h3>
-            <form action="/cart" method="POST">
-                @csrf
-                <input type="hidden" name="price[price]" value="{{$goodsPrice}}"/>
-                <input type="hidden" name="price[goods_id]" value="{{$goods->id}}"/>
-                <button type="submit">カートへ</button>
-            </form>
-            <form action="/varif/{{$goods->id}}" id="form_{{$goods->id}}" method="POST">
-                @csrf
-                @method('DELETE')
-                <button type="button" onclick="deleteGoods({{$goods->id}})">削除</botton>
-            </form>
-        <script>
-            
-        function deleteGoods(id) {
-        'use strict'
-
-        if (confirm('本当に削除しますか？')) {
-            document.getElementById(`form_${id}`).submit();
-        }
-    }
-        </script>
+            <h3>合計金額：{{$goods->price->price}}</h3>
+            <a href="/cart/show"><button>戻る</button></a>
+        <script></script>
     </body>
 </html>

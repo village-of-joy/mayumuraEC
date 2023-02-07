@@ -97,12 +97,37 @@ class GoodsController extends Controller
                                         ]);
     }
     
-     public function shikishi(){
-        return view('goods/shikishi');
+    public function shikishi(Request $request)
+    {
+        return view('goods/shikishi/shikishi')->with(['doll_category1'=>$request->input('doll_category1'),
+                                            'doll_name1'=>$request->input('doll_name1'),
+                                            'doll_category2'=>$request->input('doll_category2'),
+                                            'doll_name2'=>$request->input('doll_name2'),
+                                            'basisname'=>$request->input('basisname')
+                                        ]);
     }
     
-    public function shikishiDolls(){
-        return view('goods/shikishiDolls');
+    
+    public function shikishiDolls1(Request $request)
+    {
+        return view('goods/shikishi/shikishiDolls1')->with([
+                                            'doll_category1'=>$request->input('doll_category1'),
+                                            'doll_name1'=>$request->input('doll_name1'),
+                                            'doll_category2'=>$request->input('doll_category2'),
+                                            'doll_name2'=>$request->input('doll_name2'),
+                                            'basisname'=>$request->input('basisname')
+                                        ]);
+    }
+    
+    public function shikishiDolls2(Request $request)
+    {
+        return view('goods/shikishi/shikishiDolls2')->with([
+                                            'doll_category1'=>$request->input('doll_category1'),
+                                            'doll_name1'=>$request->input('doll_name1'),
+                                            'doll_category2'=>$request->input('doll_category2'),
+                                            'doll_name2'=>$request->input('doll_name2'),
+                                            'basisname'=>$request->input('basisname')
+                                        ]);
     }
     
     
@@ -110,7 +135,7 @@ class GoodsController extends Controller
     {
         $input = $request['price'];
         $price->fill($input)->save();
-        return redirect('/cart/'.$price->goods_id);
+        return redirect('/cart/show');
     }
     
     public function cart(Goods $goods)
@@ -118,4 +143,21 @@ class GoodsController extends Controller
         return view('goods/cart')->with(['goods'=>$goods->get()]);
     }
     
+    public function show(Goods $goods)
+    {
+        return view('goods/show')->with(['goods'=>$goods]);
+    }
+    
+    public function deleteVarif(Goods $goods)
+    {
+        $goods->delete();
+        return redirect('/');
+    }
+    
+    public function deleteCart(Goods $goods)
+    {
+        $goods->price()->delete();
+        $goods->delete();
+        return redirect('/cart/show');
+    }
 }
