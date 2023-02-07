@@ -27,4 +27,6 @@ class Goods extends Model
     {
         return $this->hasOne(Price::class);
     }
+    
+    
 }
