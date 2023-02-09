@@ -52,7 +52,7 @@
                     <div id="turtle" >
                         <div class="turtle">
                             <div class="img_p">
-                                <img src="image/turtle_small.JPG" alt="かめ画像" width="30%" head="30%">
+                                <img src="image/turtle.JPG" alt="かめ画像" width="30%" head="30%">
                                 <p>かめ</p>
                             </div>
                             <div class="input">
@@ -96,16 +96,11 @@
                 　　<div id="cow" >
                         <div class="cow">
                             <div class="img_p">
-                                <img src="image/cow.JPG" alt="丑（うし・ノーマル）" width="30%" height="30%">
-                                <p>丑（うし・ノーマル）</p>
-                            </div>
-                            <div class="img_p">
                                 <img src="image/cow_smile.JPG" alt="丑（うし・笑顔）" width="30%" height="30%">
                                 <p>丑（うし・笑顔）</p>
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name2" value="丑（うし・ノーマル">丑（うし・ノーマル）</div>
                             <div><input type="radio" name="doll_name2" value="丑（うし・笑顔）">丑（うし・笑顔）</div>
                         </div>
                 　　</div>
@@ -113,16 +108,11 @@
                 　　<div id="tiger" >
                         <div class="tiger">
                             <div class="img_p">
-                                <img src="image/tiger.JPG" alt="寅（とら・ノーマル）" width="30%" height="30%">
-                                <p>寅（とら・ノーマル）</p>
-                            </div>
-                            <div class="img_p">
                                 <img src="image/tiger_smile.JPG" alt="寅（とら・笑顔）" width="30%" height="30%">
                                 <p>寅（とら・笑顔）</p>
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name2" value="寅（とら・ノーマル）">寅（とら・ノーマル）</div>
                             <div><input type="radio" name="doll_name2" value="寅（とら・笑顔）">寅（とら・笑顔）</div>
                         </div>
                 　　</div>
@@ -147,16 +137,11 @@
                 　　<div id="dragon" >
                         <div class="dragon">
                             <div class="img_p">
-                                <img src="image/dragon.JPG" alt="辰（龍・ノーマル）" width="30%" height="30%">
-                                <p>辰（龍・ノーマル）</p>
-                            </div>
-                            <div class="img_p">
                                 <img src="image/dragon_smile.JPG" alt="辰（龍・笑顔）" width="30%" height="30%">
                                 <p>辰（龍・笑顔）</p>
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name2" value="辰（龍・ノーマル）">辰（龍・ノーマル）</div>
                             <div><input type="radio" name="doll_name2" value="辰（龍・笑顔）">辰（龍・笑顔）</div>
                         </div>
                 　　</div>
@@ -181,26 +166,17 @@
                 　　<div id="horse" >
                         <div class="horse">
                             <div class="img_p">
-                                <img src="image/horse.JPG" alt="午（うま・ノーマル）" width="30%" height="30%">
-                                <p>午（うま・ノーマル）</p>
-                            </div>
-                            <div class="img_p">
                                 <img src="image/horse_smile.JPG" alt="午（うま・笑顔）" width="30%" height="30%">
                                 <p>午（うま・笑顔）</p>
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name2" value="午（うま・ノーマル）">午（うま・ノーマル）</div>
                             <div><input type="radio" name="doll_name2" value="午（うま・笑顔）">午（うま・笑顔）</div>
                         </div>
                 　　</div>
                 　　
                 　　<div id="sheep" >
                         <div class="sheep">
-                            <div class="img_p">
-                                <img src="image/sheep.JPG" alt="未（ひつじ・ノーマル）" width="30%" height="30%">
-                                <p>未（ひつじ・ノーマル）</p>
-                            </div>
                             <div class="img_p">
                                 <img src="image/sheep_smile.JPG" alt="未（ひつじ・笑顔）" width="30%" height="30%">
                                 <p>未（ひつじ・笑顔）</p>
@@ -232,16 +208,11 @@
                 　　<div id="bird" >
                         <div class="bird">
                             <div class="img_p">
-                                <img src="image/bird.JPG" alt="酉（とり・ノーマル）" width="30%" height="30%">
-                                <p>酉（とり・ノーマル）</p>
-                            </div>
-                            <div class="img_p">
                                 <img src="image/bird_smile.JPG" alt="酉（とり・笑顔）" width="30%" height="30%">
                                 <p>酉（とり・笑顔）</p>
                             </div>
                         </div>
                         <div class="input">
-                            <div><input type="radio" name="doll_name2" value="酉（とり・ノーマル）">酉（とり・ノーマル）</div>
                             <div><input type="radio" name="doll_name2" value="酉（とり・笑顔）">酉（とり・笑顔）</div>
                         </div>
                 　　</div>

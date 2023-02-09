@@ -69,14 +69,14 @@
             
             <div class="message">
                 <h2>メッセージ</h2>
-                <input type="text" name="goods[message]" id="textmes" maxlength="20" onkeyup="ShowLength1(value);" >
+                <input type="text" name="goods[message]" id="textmes" maxlength="20" onkeyup="ShowLength1(value);" value="{{old('goods[message]')}}">
                 <p class="caution">※10文字程度でお願いします</p>
                 <p id="inputlength1">0文字</p>
             </div>
             
             <div class="comment">
                 <h2>コメント・要望</h2>
-                <textarea name="goods[comment]" cols="24" rows="3" placeholder="200文字以下でお願いします" maxlength="200" onkeyup="ShowLength2(value);" ></textarea>
+                <textarea name="goods[comment]" cols="24" rows="3" placeholder="200文字以下でお願いします" maxlength="200" onkeyup="ShowLength2(value);" >{{ old('goods[comment]') }}</textarea>
                 <p id="inputlength2">0文字</p>
             </div>
             
