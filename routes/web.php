@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GoodsController;
 use App\Http\Controllers\DollsController;
+use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\GoogleLoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +34,9 @@ Route::get('/cart/show', [GoodsController::class, 'cart']);
 Route::post('/cart', [GoodsController::class, 'cartStore']);
 
 Route::get('/show/{goods}', [GoodsController::class, 'show']);
+
+Route::get('/completed', [PaymentController::class, 'completed']);
+Route::post('/pay', [PaymentController::class, 'pay']);
+
+Route::get('/auth/redirect', [GoogleLoginController::class, 'getGoogleAuth']);
+Route::get('/login/callback', [GoogleLoginController::class, 'authGoogleCallback']);
