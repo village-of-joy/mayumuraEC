@@ -26,7 +26,7 @@
                         <input type="hidden" name="doll_category2" value="{{$doll_category2}}"/>
                         <input type="hidden" name="doll_name2" value="{{$doll_name2}}"/>
                     </form>
-                    <p class="body__error" style="color:red">{{ $errors->first('goods.doll_category1') }}</p>
+                    <p class="body__error" style="color:red">{{ $errors->first('goods.doll_name1') }}</p>
                 </div>
                 <div>
                     <h3>人形２</h3>
@@ -52,11 +52,11 @@
                     <div class="borad_img">
                         <div class="img_p">
                             <p>ノーマル</p>
-                            <img src="image/board.JPG" alt="木板ノーマル画像" width="30%" height="30%">
+                            <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088555/board_z2i0xy.jpg" alt="木板ノーマル画像" width="30%" height="30%">
                         </div>
                         <div class="img_p">
                             <p>ブランコ</p>
-                            <img src="image/branko.JPG" alt="木板ブランコ画像" width="30%" height="30%">
+                            <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088551/branko_w97arj.jpg" alt="木板ブランコ画像" width="30%" height="30%">
                         </div>    
                     </div>
                     <div class="input_basis">
