@@ -52,23 +52,23 @@
                     <div class="borad_img">
                         <div class="img_p">
                             <p>ノーマル</p>
-                            <img src="image/taketatu.JPG" alt="色紙ノーマル画像" width="30%" height="30%">
+                            <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088544/taketatu_dh6m4m.jpg" alt="色紙ノーマル画像" width="30%" height="30%">
                         </div>
                         <div class="img_p">
                             <p>竹立</p>
-                            <img src="image/taketatu.JPG" alt="色紙竹立画像" width="30%" height="30%">
+                            <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088544/taketatu_dh6m4m.jpg" alt="色紙竹立画像" width="30%" height="30%">
                         </div>
                         <div class="img_p">
                             <p>竹三角</p>
-                            <img src="image/takesankaku.JPG" alt="色紙竹三角画像" width="30%" height="30%">
+                            <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088544/takesankaku_gl5ny3.jpg" alt="色紙竹三角画像" width="30%" height="30%">
                         </div>
                         <div class="img_p">
                             <p>竹ばさみ</p>
-                            <img src="image/takebasami.JPG" alt="色紙竹ばさみ画像" width="30%" height="30%">
+                            <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088544/takebasami_s0jjrj.jpg" alt="色紙竹ばさみ画像" width="30%" height="30%">
                         </div>
                         <div class="img_p">
                             <p>扇面</p>
-                            <img src="image/ougimen.JPG" alt="色紙扇面画像" width="30%" height="30%">
+                            <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088540/ougimen_en9wzr.jpg" alt="色紙扇面画像" width="30%" height="30%">
                         </div>    
                     </div>
                     <div class="input_basis">

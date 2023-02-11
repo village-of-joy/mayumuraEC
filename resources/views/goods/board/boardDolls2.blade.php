@@ -26,11 +26,6 @@
                 
                 <h2>種類</h2>
                 <div id="animal">
-                    <select id="animal_type" onchange="AnimalTypeCange();">
-                        <option value="1">ねこ</option>
-                        <option value="2">かめ</option>
-                        <option value="3">ふくろう</option>
-                    </select>
                     
                     <div id="cat">
                         <div class="cat">
@@ -52,7 +47,7 @@
                     <div id="turtle" >
                         <div class="turtle">
                             <div class="img_p">
-                                <img src="image/turtle.JPG" alt="かめ画像" width="30%" head="30%">
+                                <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088547/turtle_o5laim.jpg" alt="かめ画像" width="30%" head="30%">
                                 <p>かめ</p>
                             </div>
                             <div class="input">
@@ -64,7 +59,7 @@
                     <div id="owl" >
                         <div class="owl">
                             <div class="img_p">
-                                <img src="image/owl.JPG" alt="ふくろう画像" width="30%" height="30%">
+                                <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088548/owl_i4anhp.jpg" alt="ふくろう画像" width="30%" height="30%">
                                 <p>ふくろう</p>
                             </div>
                         </div>
@@ -79,11 +74,11 @@
                 　　<div id="mouse">
                         <div class="mouse">
                             <div class="img_p">
-                                <img src="image/mouse.JPG" alt="子（ねずみ・ノーマル）" width="30%" height="30%">
+                                <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088537/mouse_cvopzg.jpg" alt="子（ねずみ・ノーマル）" width="30%" height="30%">
                                 <p>子（ねずみ・ノーマル）</p>
                             </div>
                             <div class="img_p">
-                                <img src="image/mouse_smile.JPG" alt="子（ねずみ・笑顔）" width="30%" height="30%">
+                                <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088536/mouse_smile_ds0yrf.jpg" alt="子（ねずみ・笑顔）" width="30%" height="30%">
                                 <p>子（ねずみ・笑顔）</p>
                             </div>
                         </div>
@@ -96,7 +91,7 @@
                 　　<div id="cow" >
                         <div class="cow">
                             <div class="img_p">
-                                <img src="image/cow_smile.JPG" alt="丑（うし・笑顔）" width="30%" height="30%">
+                                <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088533/cow_smile_qsf1sp.jpg" alt="丑（うし・笑顔）" width="30%" height="30%">
                                 <p>丑（うし・笑顔）</p>
                             </div>
                         </div>
@@ -108,7 +103,7 @@
                 　　<div id="tiger" >
                         <div class="tiger">
                             <div class="img_p">
-                                <img src="image/tiger_smile.JPG" alt="寅（とら・笑顔）" width="30%" height="30%">
+                                <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088546/tiger_smile_qg39fk.jpg" alt="寅（とら・笑顔）" width="30%" height="30%">
                                 <p>寅（とら・笑顔）</p>
                             </div>
                         </div>
@@ -120,11 +115,11 @@
                 　　<div id="rabbit" >
                         <div class="rabbit">
                             <div class="img_p">
-                                <img src="image/rabbit.JPG" alt="卯（うさぎ・ノーマル）" width="30%" height="30%">
+                                <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088540/rabbit_iyubbe.jpg" alt="卯（うさぎ・ノーマル）" width="30%" height="30%">
                                 <p>卯（うさぎ・ノーマル）</p>
                             </div>
                             <div class="img_p">
-                                <img src="image/rabbit_smile.JPG" alt="卯（うさぎ・笑顔）" width="30%" height="30%">
+                                <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088540/rabbit_smile_lndfwc.jpg" alt="卯（うさぎ・笑顔）" width="30%" height="30%">
                                 <p>卯（うさぎ・笑顔）</p>
                             </div>
                         </div>
@@ -137,7 +132,7 @@
                 　　<div id="dragon" >
                         <div class="dragon">
                             <div class="img_p">
-                                <img src="image/dragon_smile.JPG" alt="辰（龍・笑顔）" width="30%" height="30%">
+                                <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088533/dragon_smile_jsvkmh.jpg" alt="辰（龍・笑顔）" width="30%" height="30%">
                                 <p>辰（龍・笑顔）</p>
                             </div>
                         </div>
@@ -149,11 +144,11 @@
                 　　<div id="snake" >
                         <div class="snake">
                             <div class="img_p">
-                                <img src="image/snake.JPG" alt="巳（へび・ノーマル）" width="30%" height="30%">
+                                <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088541/snake_huqkpy.jpg" alt="巳（へび・ノーマル）" width="30%" height="30%">
                                 <p>巳（へび・ノーマル）</p>
                             </div>
                             <div class="img_p">
-                                <img src="image/snake_smile.JPG" alt="巳（へび・笑顔）" width="30%" height="30%">
+                                <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088543/snake_smile_tulr7b.jpg" alt="巳（へび・笑顔）" width="30%" height="30%">
                                 <p>巳（へび・笑顔）</p>
                             </div>
                         </div>
@@ -166,7 +161,7 @@
                 　　<div id="horse" >
                         <div class="horse">
                             <div class="img_p">
-                                <img src="image/horse_smile.JPG" alt="午（うま・笑顔）" width="30%" height="30%">
+                                <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088536/horse_smile_wcfnwb.jpg" alt="午（うま・笑顔）" width="30%" height="30%">
                                 <p>午（うま・笑顔）</p>
                             </div>
                         </div>
@@ -178,7 +173,7 @@
                 　　<div id="sheep" >
                         <div class="sheep">
                             <div class="img_p">
-                                <img src="image/sheep_smile.JPG" alt="未（ひつじ・笑顔）" width="30%" height="30%">
+                                <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088541/sheep_smile_dkvmfc.jpg" alt="未（ひつじ・笑顔）" width="30%" height="30%">
                                 <p>未（ひつじ・笑顔）</p>
                             </div>
                         </div>
@@ -191,11 +186,11 @@
                 　　<div id="monkey" >
                         <div class="monkey">
                             <div class="img_p">
-                                <img src="image/monkey.JPG" alt="申（さる・ノーマル）" width="30%" height="30%">
+                                <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088540/monkey_lzowd8.jpg" alt="申（さる・ノーマル）" width="30%" height="30%">
                                 <p>申（さる・ノーマル）</p>
                             </div>
                             <div class="img_p">
-                                <img src="image/monkey_smile.JPG" alt="申（さる・笑顔）" width="30%" height="30%">
+                                <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088537/monkey_smile_gifsp3.jpg" alt="申（さる・笑顔）" width="30%" height="30%">
                                 <p>申（さる・笑顔）</p>
                             </div>
                         </div>
@@ -208,7 +203,7 @@
                 　　<div id="bird" >
                         <div class="bird">
                             <div class="img_p">
-                                <img src="image/bird_smile.JPG" alt="酉（とり・笑顔）" width="30%" height="30%">
+                                <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088548/bird_smile_vwfokl.jpg" alt="酉（とり・笑顔）" width="30%" height="30%">
                                 <p>酉（とり・笑顔）</p>
                             </div>
                         </div>
@@ -220,11 +215,11 @@
                 　　<div id="dog" >
                         <div class="dog">
                             <div class="img_p">
-                                <img src="image/dog.JPG" alt="戌（いぬ・ノーマル）" width="30%" height="30%">
+                                <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088533/dog_gnzt2g.jpg" alt="戌（いぬ・ノーマル）" width="30%" height="30%">
                                 <p>戌（いぬ・ノーマル）</p>
                             </div>
                             <div class="img_p">
-                                <img src="image/dog_smile.JPG" alt="戌（いぬ・笑顔）" width="30%" height="30%">
+                                <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088534/dog_smile_sb8f0v.jpg" alt="戌（いぬ・笑顔）" width="30%" height="30%">
                                 <p>戌（いぬ・笑顔）</p>
                             </div>
                         </div>
@@ -237,11 +232,11 @@
                 　　<div id="boar" >
                         <div class="boar">
                             <div class="img_p">
-                                <img src="image/boar.JPG" alt="亥（いのしし・ノーマル）" width="30%" height="30%">
+                                <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088549/boar_npaoqf.jpg" alt="亥（いのしし・ノーマル）" width="30%" height="30%">
                                 <p>亥（いのしし・ノーマル）</p>
                             </div>
                             <div class="img_p">
-                                <img src="image/boar_smile.JPG" alt="亥（いのしし・笑顔）" width="30%" height="30%">
+                                <img src="https://res.cloudinary.com/dsnxdprqj/image/upload/v1676088549/boar_smile_gi3i44.jpg" alt="亥（いのしし・笑顔）" width="30%" height="30%">
                                 <p>亥（いのしし・笑顔）</p>
                             </div>
                         </div>
