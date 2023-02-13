@@ -160,4 +160,7 @@ class GoodsController extends Controller
         $goods->delete();
         return redirect('/cart/show');
     }
+    
+    
+    
 }
