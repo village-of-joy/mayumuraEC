@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\GoodsController;
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\GoogleLoginController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -61,3 +62,7 @@ Route::controller(PaymentController::class)->middleware(['auth'])->group(functio
    Route::post('/pay', 'pay')->name('pay');
    Route::get('/completed', 'completed')->name('completed');
 });
+
+Route::get('/login/{provider}', 'Auth\LoginController@redirectToProvider')->where('social', 'google');
+Route::get('/login/{provider}/callback', 'Auth\LoginController@handleProviderCallback')->where('social', 'google');
+

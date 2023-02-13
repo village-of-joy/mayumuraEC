@@ -1,7 +1,10 @@
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
+    
 
+    <a  class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="/register">{{ __('新規登録')}}</a>
+    
     <form method="POST" action="{{ route('login') }}">
         @csrf
 
@@ -42,6 +45,14 @@
             <x-primary-button class="ml-3">
                 {{ __('Log in') }}
             </x-primary-button>
+            
         </div>
     </form>
+    
+    <div class="form-group row mt-5">
+        <label for="name" class="col-sm-4 col-form-label text-md-right">SNSログイン</label>
+        <div class="col-md-6">
+            <a href="{{ url('login/google')}}" class="btn btn-danger"><i class="fa fa-google"> Google</i></a>
+        </div>
+    </div>
 </x-guest-layout>

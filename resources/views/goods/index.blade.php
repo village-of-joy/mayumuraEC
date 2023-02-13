@@ -13,6 +13,7 @@
             
             <x-slot name="header">
                 test
+                <p>ログインユーザー：{{ Auth::user()->name }}</p>
             </x-slot>
             
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">まゆ村 嵐山店</h1>

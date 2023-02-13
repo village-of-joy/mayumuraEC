@@ -19,6 +19,7 @@ class PaymentController extends Controller
             //ここで顧客情報を登録
             $customer = Customer::create(array('email' => $request->stripeEmail,
                                                 'name' => $request->stripeName,
+                                                'address' => $request->stripeAddress,
                                                 'source' => $request->stripeToken
                                             )
                                         );
