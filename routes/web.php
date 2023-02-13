@@ -1,10 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\GoodsController;
-use App\Http\Controllers\DollsController;
 use App\Http\Controllers\PaymentController;
-use App\Http\Controllers\GoogleLoginController;
+
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,27 +16,48 @@ use App\Http\Controllers\GoogleLoginController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', [GoodsController::class, 'index']);
 
-Route::get('/varif/{goods}', [GoodsController::class, 'varif']);
-Route::post('/varif', [GoodsController::class, 'store']);
-Route::delete('/varif/{goods}', [GoodsController::class, 'deleteVarif']);
-Route::delete('/cart/{goods}', [GoodsController::class, 'deleteCart']);
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::get('/board', [GoodsController::class, 'board']);
-Route::get('/boardDolls1', [GoodsController::class, 'boardDolls1']);
-Route::get('/boardDolls2', [GoodsController::class, 'boardDolls2']);
-Route::get('/shikishi', [GoodsController::class, 'shikishi']);
-Route::get('/shikishiDolls1', [GoodsController::class, 'shikishiDolls1']);
-Route::get('/shikishiDolls2', [GoodsController::class, 'shikishiDolls2']);
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/cart/show', [GoodsController::class, 'cart']);
-Route::post('/cart', [GoodsController::class, 'cartStore']);
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
 
-Route::get('/show/{goods}', [GoodsController::class, 'show']);
+require __DIR__.'/auth.php';
 
-Route::get('/completed', [PaymentController::class, 'completed']);
-Route::post('/pay', [PaymentController::class, 'pay']);
+Route::controller(GoodsController::class)->middleware(['auth'])->group(function(){
+   Route::get('/', 'index')->name('index');
+   
+   Route::get('/varif/{goods}', 'varif')->name('varif');
+   Route::post('/varif', 'store')->name('store');
+   Route::delete('/varif/{goods}', 'deleteVarif');
+   Route::delete('/cart/{goods}', 'deleteCart');
+   
+   Route::get('/board', 'board')->name('board');
+   Route::get('/boardDolls1', 'boardDolls1')->name('boardDolls1');
+   Route::get('/boardDolls2', 'boardDolls2')->name('boardDolls2');
+   Route::get('/shikishi', 'shikishi')->name('shikishi');
+   Route::get('/shikishiDolls1', 'shikishiDolls1')->name('shikishiDolls1');
+   Route::get('/shikishiDolls2', 'shikishiDolls2')->name('shikishiDolls2');
+   
+   Route::get('/cart/show', 'cart')->name('cart');
+   Route::post('/cart', 'cartStore')->name('cartStore');
+   
+   Route::get('/show/{goods}', 'show')->name('show');
+   
+   
 
-Route::get('/auth/redirect', [GoogleLoginController::class, 'getGoogleAuth']);
-Route::get('/login/callback', [GoogleLoginController::class, 'authGoogleCallback']);
+});
+
+Route::controller(PaymentController::class)->middleware(['auth'])->group(function(){
+   Route::post('/pay', 'pay')->name('pay');
+   Route::get('/completed', 'completed')->name('completed');
+});
