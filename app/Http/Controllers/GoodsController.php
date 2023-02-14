@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Goods;
 use App\Models\Price;
+use App\Models\User;
 use App\Http\Requests\GoodsRequest;
 
 class GoodsController extends Controller
@@ -138,9 +139,11 @@ class GoodsController extends Controller
         return redirect('/cart/show');
     }
     
-    public function cart(Goods $goods)
+    public function cart(User $user, Goods $goods)
     {
-        return view('goods/cart')->with(['goods'=>$goods->get()]);
+        $user = auth()->user()->id;
+        $goods = Goods::where('user_id', $user)->get();
+        return view('goods/cart', compact('goods'));
     }
     
     public function show(Goods $goods)

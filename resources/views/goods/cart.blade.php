@@ -11,6 +11,7 @@
         <x-app-layout>
             <h1>Mayumura SHOP</h1>
             <h2>カート</h2>
+            
                 @php
                     $total = 0;
                     $num = 0;
@@ -31,8 +32,10 @@
                         <button type="button" onclick="deleteGoods({{$good->id}})">削除</button>
                     </form>
                 @endforeach
+                
                 <h2>合計金額</h2>
                 <p>{{$total}}円</p>
+                
                 <form action="{{ asset('pay') }}" method="POST">
                     @csrf
                 <script

@@ -44,7 +44,8 @@
             
             <form action="/varif" method="POST">
                 @csrf
-                <input type="hidden" name="goods[basis_category]" value="木板" />   
+                <input type="hidden" name="goods[basis_category]" value="木板" />
+                <input type="hidden" name="goods[user_id]" value="{{ Auth::user()->id }}" />
                 
                 <div class="basis_name">
                     <div id="board_type">
