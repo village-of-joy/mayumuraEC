@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('doll_name2', 20)->nullable();
             $table->string('message', 20)->nullable();
             $table->string('comment', 200)->nullable();
+            $table->integer('user_id');
             $table->timestamps();
         });
     }

@@ -20,6 +20,7 @@ class Goods extends Model
         'doll_name2',
         'message',
         'comment',
+        'user_id',
     ];
     
     
@@ -27,6 +28,7 @@ class Goods extends Model
     {
         return $this->hasOne(Price::class);
     }
+    
     
     
 }
