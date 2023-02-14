@@ -1,12 +1,9 @@
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
-<<<<<<< HEAD
     
     <a href="/register" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"><p>{{ __('新規登録') }}</p></a>
-=======
->>>>>>> origin/master
-
+    
     <form method="POST" action="{{ route('login') }}">
         @csrf
 
@@ -49,12 +46,9 @@
             </x-primary-button>
         </div>
     </form>
-<<<<<<< HEAD
     
     <a href="/auth/redirect"><x-primary-button class="ml-3">
         {{ __('Google Login') }}
     </x-primary-button></a>
-    
-=======
->>>>>>> origin/master
+
 </x-guest-layout>
