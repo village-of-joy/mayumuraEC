@@ -8,10 +8,11 @@
     </head>
     
     <body>
-        {{Auth::user()->name}}
+        <x-app-layout>
             <h1>決済完了</h1>
             <a href="/"><button type="button">トップへ</button></a>
             
             <script></script>
+        </x-app-layout>
     </body>
 </html>
