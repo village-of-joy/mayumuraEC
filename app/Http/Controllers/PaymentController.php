@@ -5,16 +5,20 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Stripe\Stripe;
 use Stripe\Charge;
+use Stripe\Customer;
 
 class PaymentController extends Controller
 {
     public function pay(Request $request){
-        $total = $request->data-amount;
+        
+        $price = $request->input('total');
+        
         try{
             Stripe::setApikey(env('STRIPE_SECRET'));
             
             //ここで顧客情報を登録
             $customer = Customer::create(array('email' => $request->stripeEmail,
+                                                'name' => $request->stripeName,
                                                 'source' => $request->stripeToken
                                             )
                                         );
@@ -23,7 +27,7 @@ class PaymentController extends Controller
             dump($customer->id);
             //お支払処理
             $charge = Charge::create(array('customer' => $customer->id,
-                                            'amount' => $total,
+                                            'amount' => $price,
                                             'currency' => 'jpy'
                                         )
                                     );
@@ -42,8 +46,10 @@ class PaymentController extends Controller
         }
     }
     
+    
     public function completed()
     {
         return view('goods/completed');
     }
+    
 }

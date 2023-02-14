@@ -1,0 +1,145 @@
+[33me4cce06[m[33m ([m[1;36mHEAD -> [m[1;32mdev_basis18[m[33m, [m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{0}: reset: moving to HEAD^
+[33mcc7b4bf[m HEAD@{1}: commit: googleログイン
+[33me4cce06[m[33m ([m[1;36mHEAD -> [m[1;32mdev_basis18[m[33m, [m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{2}: checkout: moving from master to dev_basis18
+[33me4cce06[m[33m ([m[1;36mHEAD -> [m[1;32mdev_basis18[m[33m, [m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{3}: checkout: moving from dev_basis18 to master
+[33m3d7688a[m[33m ([m[1;31morigin/dev_basis18[m[33m)[m HEAD@{4}: commit: 12
+[33me4cce06[m[33m ([m[1;36mHEAD -> [m[1;32mdev_basis18[m[33m, [m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{5}: checkout: moving from master to dev_basis18
+[33me4cce06[m[33m ([m[1;36mHEAD -> [m[1;32mdev_basis18[m[33m, [m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{6}: checkout: moving from dev_basis18 to master
+[33me4cce06[m[33m ([m[1;36mHEAD -> [m[1;32mdev_basis18[m[33m, [m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{7}: checkout: moving from master to dev_basis18
+[33me4cce06[m[33m ([m[1;36mHEAD -> [m[1;32mdev_basis18[m[33m, [m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{8}: merge origin/master: Fast-forward
+[33m64cc6fd[m HEAD@{9}: checkout: moving from dev_basis17 to master
+[33m9c6944c[m[33m ([m[1;31morigin/dev_basis17[m[33m, [m[1;32mdev_basis17[m[33m)[m HEAD@{10}: commit: breeze追加, stripe顧客情報
+[33m64cc6fd[m HEAD@{11}: checkout: moving from master to dev_basis17
+[33m64cc6fd[m HEAD@{12}: commit: 21
+[33m27e2eaf[m HEAD@{13}: commit: public image削除
+[33m3119dee[m HEAD@{14}: merge origin/master: Fast-forward
+[33md8fe4b0[m HEAD@{15}: checkout: moving from dev_basis16 to master
+[33m51ba851[m[33m ([m[1;31morigin/dev_basis16[m[33m, [m[1;32mdev_basis16[m[33m)[m HEAD@{16}: commit: cloudinary
+[33md8fe4b0[m HEAD@{17}: checkout: moving from master to dev_basis16
+[33md8fe4b0[m HEAD@{18}: checkout: moving from dev_basis16 to master
+[33md8fe4b0[m HEAD@{19}: checkout: moving from master to dev_basis16
+[33md8fe4b0[m HEAD@{20}: merge origin/master: Fast-forward
+[33m7bac184[m HEAD@{21}: checkout: moving from dev_basis15 to master
+[33m7299dc6[m[33m ([m[1;31morigin/dev_basis15[m[33m, [m[1;32mdev_basis15[m[33m)[m HEAD@{22}: commit: stripe google認証機能（仮？）追加
+[33m7bac184[m HEAD@{23}: checkout: moving from master to dev_basis15
+[33m7bac184[m HEAD@{24}: checkout: moving from dev_basis15 to master
+[33m7bac184[m HEAD@{25}: checkout: moving from master to dev_basis15
+[33m7bac184[m HEAD@{26}: merge origin/master: Fast-forward
+[33m5c17f73[m HEAD@{27}: checkout: moving from dev_basis14 to master
+[33m9bfd3a9[m[33m ([m[1;31morigin/dev_basis14[m[33m, [m[1;32mdev_basis14[m[33m)[m HEAD@{28}: commit: 削除機能追加, 色紙追加
+[33m5c17f73[m HEAD@{29}: checkout: moving from master to dev_basis14
+[33m5c17f73[m HEAD@{30}: checkout: moving from 5c17f737641c1d089d28fe5bf28b9f13a80a60a9 to master
+[33m5c17f73[m HEAD@{31}: checkout: moving from master to dev_basis14
+[33m5c17f73[m HEAD@{32}: checkout: moving from dev_basis14 to master
+[33m5c17f73[m HEAD@{33}: checkout: moving from master to dev_basis14
+[33m5c17f73[m HEAD@{34}: checkout: moving from dev_basis13 to master
+[33m4de5275[m[33m ([m[1;31morigin/dev_basis13[m[33m, [m[1;32mdev_basis13[m[33m)[m HEAD@{35}: checkout: moving from master to dev_basis13
+[33m5c17f73[m HEAD@{36}: commit: update package.json
+[33m89354d4[m HEAD@{37}: commit: Procfile for Heroku
+[33ma92ef6b[m HEAD@{38}: merge origin/master: Fast-forward
+[33mabc900a[m HEAD@{39}: checkout: moving from dev_basis13 to master
+[33m4de5275[m[33m ([m[1;31morigin/dev_basis13[m[33m, [m[1;32mdev_basis13[m[33m)[m HEAD@{40}: commit: 1
+[33mabc900a[m HEAD@{41}: checkout: moving from master to dev_basis13
+[33mabc900a[m HEAD@{42}: merge origin/master: Fast-forward
+[33m1593717[m HEAD@{43}: checkout: moving from dev_basis12 to master
+[33ma546577[m[33m ([m[1;31morigin/dev_basis12[m[33m, [m[1;32mdev_basis12[m[33m)[m HEAD@{44}: commit: 確認画面(varif.b.p)作成
+[33m1593717[m HEAD@{45}: checkout: moving from master to dev_basis12
+[33m1593717[m HEAD@{46}: checkout: moving from master to master
+[33m1593717[m HEAD@{47}: merge origin/master: Fast-forward
+[33m852089d[m[33m ([m[1;32mprev-master[m[33m, [m[1;32mdev_basis10[m[33m)[m HEAD@{48}: checkout: moving from dev_basis11 to master
+[33me40171a[m[33m ([m[1;31morigin/dev_basis11[m[33m, [m[1;32mdev_basis11[m[33m)[m HEAD@{49}: commit: バリデーション追加（日本語）
+[33m852089d[m[33m ([m[1;32mprev-master[m[33m, [m[1;32mdev_basis10[m[33m)[m HEAD@{50}: checkout: moving from master to dev_basis11
+[33m852089d[m[33m ([m[1;32mprev-master[m[33m, [m[1;32mdev_basis10[m[33m)[m HEAD@{51}: merge dev_basis10: Fast-forward
+[33md540a05[m HEAD@{52}: checkout: moving from dev_basis10 to master
+[33m852089d[m[33m ([m[1;32mprev-master[m[33m, [m[1;32mdev_basis10[m[33m)[m HEAD@{53}: checkout: moving from master to dev_basis10
+[33md540a05[m HEAD@{54}: checkout: moving from prev-master to master
+[33m852089d[m[33m ([m[1;32mprev-master[m[33m, [m[1;32mdev_basis10[m[33m)[m HEAD@{55}: checkout: moving from master to prev-master
+[33md540a05[m HEAD@{56}: checkout: moving from prev-master to master
+[33m852089d[m[33m ([m[1;32mprev-master[m[33m, [m[1;32mdev_basis10[m[33m)[m HEAD@{57}: Branch: renamed refs/heads/master to refs/heads/prev-master
+[33m852089d[m[33m ([m[1;32mprev-master[m[33m, [m[1;32mdev_basis10[m[33m)[m HEAD@{59}: checkout: moving from dev_basis11 to master
+[33md540a05[m HEAD@{60}: checkout: moving from master to dev_basis11
+[33m852089d[m[33m ([m[1;32mprev-master[m[33m, [m[1;32mdev_basis10[m[33m)[m HEAD@{61}: checkout: moving from dev_basis11 to master
+[33md540a05[m HEAD@{62}: checkout: moving from master to dev_basis11
+[33m852089d[m[33m ([m[1;32mprev-master[m[33m, [m[1;32mdev_basis10[m[33m)[m HEAD@{63}: merge dev_basis10: Fast-forward
+[33md540a05[m HEAD@{64}: checkout: moving from dev_basis10 to master
+[33m852089d[m[33m ([m[1;32mprev-master[m[33m, [m[1;32mdev_basis10[m[33m)[m HEAD@{65}: merge master: Merge made by the 'ours' strategy.
+[33m621691d[m[33m ([m[1;31morigin/dev_basis10[m[33m)[m HEAD@{66}: checkout: moving from master to dev_basis10
+[33md540a05[m HEAD@{67}: checkout: moving from dev_basis10 to master
+[33m621691d[m[33m ([m[1;31morigin/dev_basis10[m[33m)[m HEAD@{68}: checkout: moving from master to dev_basis10
+[33md540a05[m HEAD@{69}: checkout: moving from dev_basis10 to master
+[33m621691d[m[33m ([m[1;31morigin/dev_basis10[m[33m)[m HEAD@{70}: checkout: moving from master to dev_basis10
+[33md540a05[m HEAD@{71}: commit (merge): a
+[33ma400c5c[m HEAD@{72}: checkout: moving from dev_basis10 to master
+[33m621691d[m[33m ([m[1;31morigin/dev_basis10[m[33m)[m HEAD@{73}: checkout: moving from master to dev_basis10
+[33ma400c5c[m HEAD@{74}: merge origin/master: Fast-forward
+[33m40fd7d3[m HEAD@{75}: checkout: moving from dev_basis10 to master
+[33m621691d[m[33m ([m[1;31morigin/dev_basis10[m[33m)[m HEAD@{76}: commit: テーブル一つ、システム戻す
+[33mc5928e8[m HEAD@{77}: checkout: moving from dev_basis12 to dev_basis10
+[33mac8cdd1[m HEAD@{78}: commit: 1
+[33me2e93ec[m HEAD@{79}: checkout: moving from master to dev_basis12
+[33m40fd7d3[m HEAD@{80}: merge origin/master: Fast-forward
+[33mbeef593[m HEAD@{81}: checkout: moving from dev_basis12 to master
+[33me2e93ec[m HEAD@{82}: commit: バリデーション
+[33mbeef593[m HEAD@{83}: checkout: moving from master to dev_basis12
+[33mbeef593[m HEAD@{84}: merge origin/master: Fast-forward
+[33m2200d6f[m HEAD@{85}: checkout: moving from dev_basis11 to master
+[33m526f0bf[m HEAD@{86}: commit: システム少し変更、まだエラー出る
+[33m2200d6f[m HEAD@{87}: checkout: moving from master to dev_basis11
+[33m2200d6f[m HEAD@{88}: merge origin/master: Fast-forward
+[33m8c71fbe[m HEAD@{89}: checkout: moving from dev_basis10 to master
+[33mc5928e8[m HEAD@{90}: commit: 画像追加　view/board作成
+[33m8c71fbe[m HEAD@{91}: checkout: moving from master to dev_basis10
+[33m8c71fbe[m HEAD@{92}: merge origin/master: Fast-forward
+[33m09098b8[m HEAD@{93}: checkout: moving from dev_basis09 to master
+[33me03c37d[m[33m ([m[1;31morigin/dev_basis09[m[33m, [m[1;32mdev_basis09[m[33m)[m HEAD@{94}: commit: view直し
+[33m09098b8[m HEAD@{95}: checkout: moving from master to dev_basis09
+[33m09098b8[m HEAD@{96}: merge origin/master: Fast-forward
+[33m785637e[m HEAD@{97}: checkout: moving from dev_basis08 to master
+[33m8a2cbae[m[33m ([m[1;31morigin/dev_basis08[m[33m, [m[1;32mdev_basis08[m[33m)[m HEAD@{98}: commit: basisPrice計算 Controllerで制御
+[33m785637e[m HEAD@{99}: checkout: moving from master to dev_basis08
+[33m785637e[m HEAD@{100}: merge origin/master: Fast-forward
+[33me0a38cf[m HEAD@{101}: checkout: moving from dev_basis07 to master
+[33m6915c74[m[33m ([m[1;31morigin/dev_basis07[m[33m, [m[1;32mdev_basis07[m[33m)[m HEAD@{102}: commit: goodstableのprice 削除, 確認ページ遷移
+[33me0a38cf[m HEAD@{103}: checkout: moving from dev_basis06 to dev_basis07
+[33m5e5e923[m[33m ([m[1;31morigin/dev_basis06[m[33m, [m[1;32mdev_basis06[m[33m)[m HEAD@{104}: checkout: moving from dev_basis07 to dev_basis06
+[33me0a38cf[m HEAD@{105}: checkout: moving from master to dev_basis07
+[33me0a38cf[m HEAD@{106}: merge origin/master: Fast-forward
+[33md315b77[m HEAD@{107}: checkout: moving from dev_basis06 to master
+[33m5e5e923[m[33m ([m[1;31morigin/dev_basis06[m[33m, [m[1;32mdev_basis06[m[33m)[m HEAD@{108}: commit: dolls.blade.phpの作成
+[33md315b77[m HEAD@{109}: checkout: moving from master to dev_basis06
+[33md315b77[m HEAD@{110}: merge origin/master: Fast-forward
+[33m823c121[m HEAD@{111}: checkout: moving from dev_basis05 to master
+[33m39b2845[m[33m ([m[1;31morigin/dev_basis05[m[33m, [m[1;32mdev_basis05[m[33m)[m HEAD@{112}: commit: goods.blade.phpの要所変更
+[33m823c121[m HEAD@{113}: checkout: moving from master to dev_basis05
+[33m823c121[m HEAD@{114}: merge origin/master: Fast-forward
+[33m065528c[m HEAD@{115}: checkout: moving from dev_basis04 to master
+[33md88f0a5[m[33m ([m[1;31morigin/dev_basis04[m[33m, [m[1;32mdev_basis04[m[33m)[m HEAD@{116}: commit: 商品table作成、goods.blade.phpの作成
+[33m065528c[m HEAD@{117}: checkout: moving from master to dev_basis04
+[33m065528c[m HEAD@{118}: merge origin/master: Fast-forward
+[33mfce6679[m[33m ([m[1;31morigin/dev_basis02[m[33m, [m[1;32mdev_basis02[m[33m)[m HEAD@{119}: checkout: moving from dev_basis03 to master
+[33m62b0e6b[m[33m ([m[1;31morigin/dev_basis03[m[33m, [m[1;32mdev_basis03[m[33m)[m HEAD@{120}: commit: bases/index作成
+[33mfce6679[m[33m ([m[1;31morigin/dev_basis02[m[33m, [m[1;32mdev_basis02[m[33m)[m HEAD@{121}: checkout: moving from master to dev_basis03
+[33mfce6679[m[33m ([m[1;31morigin/dev_basis02[m[33m, [m[1;32mdev_basis02[m[33m)[m HEAD@{122}: checkout: moving from dev_basis02 to master
+[33mfce6679[m[33m ([m[1;31morigin/dev_basis02[m[33m, [m[1;32mdev_basis02[m[33m)[m HEAD@{123}: checkout: moving from master to dev_basis02
+[33mfce6679[m[33m ([m[1;31morigin/dev_basis02[m[33m, [m[1;32mdev_basis02[m[33m)[m HEAD@{124}: merge dev_basis02: Fast-forward
+[33m06c7fbd[m HEAD@{125}: checkout: moving from dev_basis02 to master
+[33mfce6679[m[33m ([m[1;31morigin/dev_basis02[m[33m, [m[1;32mdev_basis02[m[33m)[m HEAD@{126}: reset: moving to ORIG_HEAD
+[33m06c7fbd[m HEAD@{127}: reset: moving to HEAD^
+[33mfce6679[m[33m ([m[1;31morigin/dev_basis02[m[33m, [m[1;32mdev_basis02[m[33m)[m HEAD@{128}: checkout: moving from master to dev_basis02
+[33m06c7fbd[m HEAD@{129}: checkout: moving from dev_basis02 to master
+[33mfce6679[m[33m ([m[1;31morigin/dev_basis02[m[33m, [m[1;32mdev_basis02[m[33m)[m HEAD@{130}: commit: database(bases)環境構築
+[33m06c7fbd[m HEAD@{131}: checkout: moving from master to dev_basis02
+[33m06c7fbd[m HEAD@{132}: checkout: moving from dev_basis01 to master
+[33m5076e63[m[33m ([m[1;31morigin/dev_basis01[m[33m, [m[1;32mdev_basis01[m[33m)[m HEAD@{133}: checkout: moving from master to dev_basis01
+[33m06c7fbd[m HEAD@{134}: checkout: moving from dev_basis02 to master
+[33m06c7fbd[m HEAD@{135}: checkout: moving from master to dev_basis02
+[33m06c7fbd[m HEAD@{136}: checkout: moving from dev_basis01 to master
+[33m5076e63[m[33m ([m[1;31morigin/dev_basis01[m[33m, [m[1;32mdev_basis01[m[33m)[m HEAD@{137}: commit: BaseController等の設定(未完成)
+[33m9e92ba8[m HEAD@{138}: checkout: moving from master to dev_basis01
+[33m06c7fbd[m HEAD@{139}: checkout: moving from dev_basis01 to master
+[33m9e92ba8[m HEAD@{140}: checkout: moving from master to dev_basis01
+[33m06c7fbd[m HEAD@{141}: commit: second commit
+[33m9e92ba8[m HEAD@{142}: checkout: moving from dev_basis01 to master
+[33m9e92ba8[m HEAD@{143}: checkout: moving from master to dev_basis01
+[33m9e92ba8[m HEAD@{144}: reset: moving to HEAD
+[33m9e92ba8[m HEAD@{145}: commit (initial): first commit

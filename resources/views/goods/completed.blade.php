@@ -8,9 +8,10 @@
     </head>
     
     <body>
-        <h1>決済完了</h1>
-        <a href="/"><button type="button">トップへ</button></a>
-        
-        <script></script>
+        {{Auth::user()->name}}
+            <h1>決済完了</h1>
+            <a href="/"><button type="button">トップへ</button></a>
+            
+            <script></script>
     </body>
 </html>

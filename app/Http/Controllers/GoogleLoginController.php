@@ -19,7 +19,8 @@ class GoogleLoginController extends Controller
     {
         $googleUser = Socialite::driver('google')->stateless()->user();
         $user = User::firstOrCreate([
-            'email' => $googleUser->email
+            'name' => $googleUser->name,
+            'email' => $googleUser->email,
         ], [
             'email_verified_at' => now(),
             'google_id' => $googleUser->getId()
