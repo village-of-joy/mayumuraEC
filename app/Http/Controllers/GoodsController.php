@@ -6,7 +6,10 @@ use Illuminate\Http\Request;
 use App\Models\Goods;
 use App\Models\Price;
 use App\Models\User;
+use App\Mail\SendTestMail;
 use App\Http\Requests\GoodsRequest;
+use Illuminate\Support\Facades\Mail;
+
 
 class GoodsController extends Controller
 {
