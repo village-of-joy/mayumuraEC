@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\GoodsController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\GoogleLoginController;
+use App\Http\Controllers\MailSendController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -63,7 +64,11 @@ Route::controller(PaymentController::class)->middleware(['auth'])->group(functio
    Route::get('/completed', 'completed')->name('completed');
 });
 
-Route::controller(GoogleLoginController::class, 'getGoogleAuth')->group(function(){
+Route::controller(GoogleLoginController::class)->group(function(){
     Route::get('/auth/redirect', 'getGoogleAuth')->name('getGoogleAuth');
     Route::get('/login/callback', 'authGoogleCallback')->name('authGoogleCallback');
+});
+
+Route::controller(MailSendController::class)->middleware(['auth'])->group(function(){
+   Route::get('/mail', 'send')->name('send'); 
 });

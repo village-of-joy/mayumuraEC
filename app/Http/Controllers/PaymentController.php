@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 use Stripe\Stripe;
 use Stripe\Charge;
 use Stripe\Customer;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendTestMail;
+use App\Models\Goods;
+use App\Models\User;
+
 
 class PaymentController extends Controller
 {
@@ -16,6 +21,8 @@ class PaymentController extends Controller
         try{
             Stripe::setApikey(env('STRIPE_SECRET'));
             
+            $user = auth()->user()->name;
+            
             //ここで顧客情報を登録
             $customer = Customer::create(array('email' => $request->stripeEmail,
                                                 'name' => $request->stripeName,
@@ -25,6 +32,7 @@ class PaymentController extends Controller
                                         
             dump($customer);
             dump($customer->id);
+            dump($customer->name);
             //お支払処理
             $charge = Charge::create(array('customer' => $customer->id,
                                             'amount' => $price,
@@ -47,8 +55,15 @@ class PaymentController extends Controller
     }
     
     
-    public function completed()
+    public function completed(User $user)
     {
+        
+        $user = auth()->user()->id;
+        $goods = Goods::where('user_id', $user)->get();
+        
+        
+        Mail::send(new SendTestMail($goods));
+        
         return view('goods/completed');
     }
     
