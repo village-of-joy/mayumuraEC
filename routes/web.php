@@ -55,7 +55,8 @@ Route::controller(GoodsController::class)->middleware(['auth'])->group(function(
    
    Route::get('/show/{goods}', 'show')->name('show');
    
-   
+   Route::post('/contact', 'postContact')->name('postContact');
+   Route::get('/send', 'contact')->name('contact');
 
 });
 
