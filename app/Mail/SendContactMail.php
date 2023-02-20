@@ -36,7 +36,7 @@ class SendContactMail extends Mailable
         return $this->view('emails.contact')
                 ->to('kitaken.09151007@docomo.ne.jp')
                 ->from('toshipapa0915.akimama1007@gmail.com')
-                ->subject('購入完了商品')
+                ->subject('まゆ村｜Contact Mail')
                 ->with(['contacts' => $this->contacts]);
     }
 }
