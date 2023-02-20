@@ -6,9 +6,10 @@ use Illuminate\Http\Request;
 use App\Models\Goods;
 use App\Models\Price;
 use App\Models\User;
-use App\Mail\SendTestMail;
+use App\Models\Contact;
 use App\Http\Requests\GoodsRequest;
 use Illuminate\Support\Facades\Mail;
+use App\Mail\SendContactMail;
 
 
 class GoodsController extends Controller
@@ -167,6 +168,20 @@ class GoodsController extends Controller
         return redirect('/cart/show');
     }
     
+    public function postContact(Request $request, Contact $contacts)
+    {
+        $input = $request['contacts'];
+        $contacts->fill($input)->save();
+        return redirect('/send');
+    }
     
+    public function contact(Request $request)
+    {
+        $contacts = Contact::orderBy('id', 'DESC')->first();
+        
+        Mail::send(new SendContactMail($contacts));
+        
+        return view('goods/contact');
+    }
     
 }
