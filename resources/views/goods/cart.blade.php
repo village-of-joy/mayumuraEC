@@ -45,7 +45,7 @@
                 data-billingAddress=true
                 data-shippingAddress=true
                 data-label="決済をする"
-                data-description="商品を購入する"
+                data-description="購入不可。入力しないでください"
                 data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
                 data-locale="auto"
                 data-currency="JPY">
